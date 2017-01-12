@@ -1,0 +1,326 @@
+Here is the title 
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 2 hours, 39 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 16:38:12 PDT 2016
+#date
+Here is the title 
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 14 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:12:56 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 33 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:32:43 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 33 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:32:45 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 34 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:33:31 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 34 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:33:32 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 35 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:34:20 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 35 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:34:21 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 36 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:34:49 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 36 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:34:50 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+total 195
+-rw-r--r-- 1 root root 198342 Sep  7 00:50 licenses.txt
+
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.897", "branch":"broadcom_dvr", "build_flavor" : "release", "build_number":"102879" }
+
+{"version_string": "1.16.832", "build_number": "102614", "pretty_name": "broadcom_dvr", "flavor_id": "103140", "branch": "broadcom_dvr", "build_flavor": "release"}
+#### Test2: Get DVR system uptime  #### 
+2016-09-23 13:58:48
+
+up 4 days, 3 hours, 48 minutes
+
+#### Test3: Check archieved logs for app crashes #### 
+-rw-r--r-- 1 root root 9.6M Sep 22 12:57 dvr_client.4.11.log
+-rw-r--r-- 1 root root 9.6M Sep 22 15:40 dvr_client.5.7.log
+-rw-r--r-- 1 root root 9.6M Sep 23 13:50 dvr_client.6.7.log
+-rw-r--r-- 1 root root 4.1M Sep 23 13:58 dvr_client.392.log
+drwxr-xr-x 2 root root  20K Sep 23 13:59 .
+
+#dateTue Sep 27 17:47:35 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+Tue Sep 27 17:53:52 PDT 2016
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test4: Record dvr_client CPU, Mem usages #### 
+%CPU %MEM CMD
+ 1.9  7.5 ./dvr_client
+
+#### Test1: Get DVR app version and client build #### 
+#### Test1: Get DVR app version and client build #### 
+#### Test1: Get DVR app version and client build #### 
