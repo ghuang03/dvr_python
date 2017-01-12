@@ -5,6 +5,8 @@ paramiko.util.log_to_file('/tmp/paramiko.log')
 import os
 import sys
 import lib
+import urllib
+
 # Open a transport
 
 host = "192.168.1.153"
