@@ -14,6 +14,7 @@ print ("locl="+localpath)
 print ("Hello")
 print ("master")
 print ("feature1")
+print ("add script")
 
 ssh = SSHClient()
 ssh.load_system_host_keys()
