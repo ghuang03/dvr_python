@@ -94,6 +94,9 @@ for device in deviceIPs:
            print 'matched'
            print l
            print d
+           
+           print l
+           print d
         #print (line)
         
         
