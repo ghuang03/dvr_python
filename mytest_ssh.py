@@ -98,7 +98,8 @@ for device in deviceIPs:
            print l
            print d
         #print (line)
-        
+           print l
+           print d 
         
         
         
