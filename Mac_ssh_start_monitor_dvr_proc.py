@@ -3,8 +3,8 @@ import paramiko
 import sys
 import os
 #deviceIp = "192.168.200.158"
-deviceIp = "192.168.1.102"
-deviceIPs = ["192.168.1.102","192.168.1.102"]
+deviceIp = "192.168.1.103"
+deviceIPs = ["192.168.1.103","192.168.1.152"]
 user = "root"
 passwd = "verizon123"
 
