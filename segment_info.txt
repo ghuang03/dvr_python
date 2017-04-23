@@ -1,0 +1,50 @@
+KGODT_2e96.m4a_start = 3700
+
+KGODT_5e192.m4a_start = 3700
+
+KGODT_01MBt.m4v_start = 1850
+
+KGODT_1MBm.m4v_start = 1850
+
+KGODT_5MBm.m4v_start = 1850
+
+KGODT_2e96.m4a_start = 3700
+
+KGODT_5e192.m4a_start = 3700
+
+KGODT_01MBt.m4v_start = 1850
+
+KGODT_1MBm.m4v_start = 1850
+
+KGODT_5MBm.m4v_start = 1850
+
+KGODT_2e96.m4a_start = 3700
+
+KGODT_5e192.m4a_start = 3700
+
+KGODT_01MBt.m4v_start = 1850
+
+KGODT_1MBm.m4v_start = 1850
+
+KGODT_5MBm.m4v_start = 1850
+
+KGODT_2e96.m4a_start = 3700
+
+KGODT_5e192.m4a_start = 3700
+
+KGODT_01MBt.m4v_start = 1850
+
+KGODT_1MBm.m4v_start = 1850
+
+KGODT_5MBm.m4v_start = 1850
+
+KGODT_2e96.m4a_start = 3700
+
+KGODT_5e192.m4a_start = 3700
+
+KGODT_01MBt.m4v_start = 1850
+
+KGODT_1MBm.m4v_start = 1850
+
+KGODT_5MBm.m4v_start = 1850
+

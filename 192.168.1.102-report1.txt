@@ -1,0 +1,112 @@
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+
+############ Test: test start  ############## 
+#### Test1: Get DVR app version and client build #### 
+{ "project":"dvr", "version_string":"1.16.1703", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108962" }
+

@@ -1,0 +1,3420 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red153\green153\blue153;\red230\green229\blue229;\red64\green11\blue217;
+\red180\green36\blue25;\red47\green180\blue29;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Mon Mar 13 10:37:39 on ttys002\
+TCA0080ALMOCAMP:~ huanhe9$ ssh babup@68.140.253.50\
+babup@68.140.253.50's password: \
+Welcome to Ubuntu 12.04.4 LTS (GNU/Linux 3.11.0-15-generic i686)\
+\
+ * Documentation:  https://help.ubuntu.com/\
+\
+  System information as of Mon Mar 13 10:45:41 PDT 2017\
+\
+  System load:  0.0               Processes:           457\
+  Usage of /:   7.9% of 44.89GB   Users logged in:     2\
+  Memory usage: 56%               IP address for eth0: 68.140.253.50\
+  Swap usage:   62%               IP address for eth1: 192.168.254.50\
+\
+  Graph this data and manage this system at:\
+    https://landscape.canonical.com/\
+\
+373 packages can be updated.\
+295 updates are security updates.\
+\
+New release '14.04.1 LTS' available.\
+Run 'do-release-upgrade' to upgrade to it.\
+\
+Last login: Fri Mar 10 14:24:31 2017 from 68.140.241.228\
+babup@master-vm4:~$ ping 192.168.231.102\
+PING 192.168.231.102 (192.168.231.102) 56(84) bytes of data.\
+64 bytes from 192.168.231.102: icmp_req=1 ttl=63 time=1.10 ms\
+64 bytes from 192.168.231.102: icmp_req=2 ttl=63 time=0.481 ms\
+^C\
+--- 192.168.231.102 ping statistics ---\
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms\
+rtt min/avg/max/mdev = 0.481/0.791/1.101/0.310 ms\
+babup@master-vm4:~$ ssh root@192.168.231.102\
+root@192.168.231.102's password: \
+/tmp/dbus.env exists\
+# \
+# \
+# \
+# cat /data/app/Version.json \
+\{ "project":"dvr", "version_string":"1.16.1645", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"107872" \}\
+# \
+# \
+# \
+# \
+# sar -u 2\
+Linux 3.14.29 (Fios-TV-DVR57B88C6A) 	03/13/17 	_armv7l_	(2 CPU)\
+\
+10:57:31        CPU     %user     %nice   %system   %iowait    %steal     %idle\
+10:57:33        all      3.48      0.00      1.00      2.99      0.00     92.54\
+10:57:35        all      0.50      0.00      0.25     45.02      0.00     54.23\
+10:57:37        all      0.25      0.00      1.74      1.99      0.00     96.02\
+^C\
+10:57:38        all      0.00      0.00      0.00      0.00      0.00    100.00\
+Average:        all      1.36      0.00      0.96     16.05      0.00     81.63\
+# watch -n2 "ls -d /hd/data/www/*/*/ -altrh |tail -n12"\
+\
+Every 2s: ls -d /hd/data/www/*/*/ -altrh |tail -n12                          2017-03-13 10:58:09\
+\
+drwxr-xr-x 2 root root 160K Mar 13 06:33 /hd/data/www/KMTPDT/1340470/\
+drwxr-xr-x 2 root root 128K Mar 13 08:10 /hd/data/www/KMTPDT/1340475/\
+drwxr-xr-x 2 root root 228K Mar 13 08:29 /hd/data/www/KMTPDT/1340476/\
+drwxr-xr-x 2 root root  48K Mar 13 08:33 /hd/data/www/KMTPDT/1340477/\
+drwxr-xr-x 2 root root  12K Mar 13 10:02 /hd/data/www/KTVUDT/1340481/\
+drwxr-xr-x 2 root root 152K Mar 13 10:20 /hd/data/www/KTVUDT/1340482/\
+drwxr-xr-x 2 root root 108K Mar 13 10:39 /hd/data/www/KMTPDT/1340483/\
+drwxr-xr-x 2 root root 148K Mar 13 10:39 /hd/data/www/KTVUDT/1340483/\
+drwxr-xr-x 2 root root 220K Mar 13 10:57 /hd/data/www/KMTPDT/1340484/\
+drwxr-xr-x 2 root root 144K Mar 13 10:57 /hd/data/www/KTVUDT/1340484/\
+drwxr-xr-x 2 root root  12K Mar 13 10:58 /hd/data/www/KMTPDT/1340485/\
+drwxr-xr-x 2 root root 4.0K Mar 13 10:58 /hd/data/www/KTVUDT/1340485/\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Every 2s: ls -d /hd/data/www/*/*/ -altrh |tail -n12                          2017-03-13 10:58:12\
+\
+drwxr-xr-x 2 root root 160K Mar 13 06:33 /hd/data/www/KMTPDT/1340470/\
+drwxr-xr-x 2 root root 128K Mar 13 08:10 /hd/data/www/KMTPDT/1340475/\
+drwxr-xr-x 2 root root 228K Mar 13 08:29 /hd/data/www/KMTPDT/1340476/\
+drwxr-xr-x 2 root root  48K Mar 13 08:33 /hd/data/www/KMTPDT/1340477/\
+drwxr-xr-x 2 root root  12K Mar 13 10:02 /hd/data/www/KTVUDT/1340481/\
+drwxr-xr-x 2 root root 152K Mar 13 10:20 /hd/data/www/KTVUDT/1340482/\
+drwxr-xr-x 2 root root 108K Mar 13 10:39 /hd/data/www/KMTPDT/1340483/\
+drwxr-xr-x 2 root root 148K Mar 13 10:39 /hd/data/www/KTVUDT/1340483/\
+drwxr-xr-x 2 root root 220K Mar 13 10:57 /hd/data/www/KMTPDT/1340484/\
+drwxr-xr-x 2 root root 144K Mar 13 10:57 /hd/data/www/KTVUDT/1340484/\
+drwxr-xr-x 2 root root 4.0K Mar 13 10:58 /hd/data/www/KTVUDT/1340485/\
+drwxr-xr-x 2 root root  12K Mar 13 10:58 /hd/data/www/KMTPDT/1340485/\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Every 2s: ls -d /hd/data/www/*/*/ -altrh |tail -n12                          2017-03-13 10:58:14\
+\
+drwxr-xr-x 2 root root 160K Mar 13 06:33 /hd/data/www/KMTPDT/1340470/\
+drwxr-xr-x 2 root root 128K Mar 13 08:10 /hd/data/www/KMTPDT/1340475/\
+drwxr-xr-x 2 root root 228K Mar 13 08:29 /hd/data/www/KMTPDT/1340476/\
+drwxr-xr-x 2 root root  48K Mar 13 08:33 /hd/data/www/KMTPDT/1340477/\
+drwxr-xr-x 2 root root  12K Mar 13 10:02 /hd/data/www/KTVUDT/1340481/\
+drwxr-xr-x 2 root root 152K Mar 13 10:20 /hd/data/www/KTVUDT/1340482/\
+drwxr-xr-x 2 root root 108K Mar 13 10:39 /hd/data/www/KMTPDT/1340483/\
+drwxr-xr-x 2 root root 148K Mar 13 10:39 /hd/data/www/KTVUDT/1340483/\
+drwxr-xr-x 2 root root 220K Mar 13 10:57 /hd/data/www/KMTPDT/1340484/\
+drwxr-xr-x 2 root root 144K Mar 13 10:57 /hd/data/www/KTVUDT/1340484/\
+drwxr-xr-x 2 root root  12K Mar 13 10:58 /hd/data/www/KMTPDT/1340485/\
+drwxr-xr-x 2 root root 4.0K Mar 13 10:58 /hd/data/www/KTVUDT/1340485/\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Every 2s: ls -d /hd/data/www/*/*/ -altrh |tail -n12                          2017-03-13 10:58:16\
+\
+drwxr-xr-x 2 root root 160K Mar 13 06:33 /hd/data/www/KMTPDT/1340470/\
+drwxr-xr-x 2 root root 128K Mar 13 08:10 /hd/data/www/KMTPDT/1340475/\
+drwxr-xr-x 2 root root 228K Mar 13 08:29 /hd/data/www/KMTPDT/1340476/\
+drwxr-xr-x 2 root root  48K Mar 13 08:33 /hd/data/www/KMTPDT/1340477/\
+drwxr-xr-x 2 root root  12K Mar 13 10:02 /hd/data/www/KTVUDT/1340481/\
+drwxr-xr-x 2 root root 152K Mar 13 10:20 /hd/data/www/KTVUDT/1340482/\
+drwxr-xr-x 2 root root 108K Mar 13 10:39 /hd/data/www/KMTPDT/1340483/\
+drwxr-xr-x 2 root root 148K Mar 13 10:39 /hd/data/www/KTVUDT/1340483/\
+drwxr-xr-x 2 root root 220K Mar 13 10:57 /hd/data/www/KMTPDT/1340484/\
+drwxr-xr-x 2 root root 144K Mar 13 10:57 /hd/data/www/KTVUDT/1340484/\
+drwxr-xr-x 2 root root 4.0K Mar 13 10:58 /hd/data/www/KTVUDT/1340485/\
+drwxr-xr-x 2 root root  12K Mar 13 10:58 /hd/data/www/KMTPDT/1340485/\
+^C\
+# \
+# \
+# \
+# sar -u 2\
+Linux 3.14.29 (Fios-TV-DVR57B88C6A) 	03/13/17 	_armv7l_	(2 CPU)\
+\
+11:46:54        CPU     %user     %nice   %system   %iowait    %steal     %idle\
+11:46:56        all      3.23      0.00      3.72      0.00      0.00     93.05\
+11:46:58        all      3.48      0.00      8.46      0.75      0.00     87.31\
+C\
+\
+\
+\
+11:47:00        all      1.49      0.00      3.23      0.50      0.00     94.78\
+^C\
+11:47:01        all     11.73      0.00      9.88     13.58      0.00     64.81\
+Average:        all      3.80      0.00      5.70      1.97      0.00     88.53\
+# \
+# \
+# \
+# \
+# ifconfig -a\
+eth0      Link encap:Ethernet  HWaddr 20:C0:47:02:0C:5A  \
+          BROADCAST MULTICAST  MTU:1500  Metric:1\
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)\
+          Interrupt:179 Base address:0x2000 \
+\
+eth1      Link encap:Ethernet  HWaddr 20:C0:47:02:0C:5B  \
+          BROADCAST MULTICAST  MTU:1500  Metric:1\
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)\
+          Interrupt:180 Base address:0x3000 \
+\
+eth2      Link encap:Ethernet  HWaddr 20:C0:47:02:0C:5A  \
+          inet addr:192.168.231.102  Bcast:192.168.231.255  Mask:255.255.255.0\
+          inet6 addr: fe80::22c0:47ff:fe02:c5a/64 Scope:Link\
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\
+          RX packets:34559357 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:136327 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:2929920213 (2.7 GiB)  TX bytes:56209993 (53.6 MiB)\
+          Interrupt:181 Base address:0x4000 \
+\
+eth3      Link encap:Ethernet  HWaddr 20:C0:47:02:0C:5D  \
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1\
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:1415234 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:0 (0.0 B)  TX bytes:375625869 (358.2 MiB)\
+          Interrupt:182 Base address:0x5000 \
+\
+lo        Link encap:Local Loopback  \
+          inet addr:127.0.0.1  Mask:255.0.0.0\
+          inet6 addr: ::1/128 Scope:Host\
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1\
+          RX packets:90971 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:90971 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:0 \
+          RX bytes:4886913 (4.6 MiB)  TX bytes:4886913 (4.6 MiB)\
+\
+# \
+# \
+# \
+# \
+# \
+# \
+# \
+# \
+# \
+# cd /etc/\
+# ls -l\
+total 2222\
+-rw-r--r-- 1 root root       8 Mar  5 18:15 TZ\
+-rwxr-xr-x 1 root root 2097152 Mar  5 18:15 backing_file\
+-rwxr-xr-x 1 root root    4433 Mar  5 18:18 build-verification_cert.pem\
+-rw-r--r-- 1 root root   14028 Mar  5 18:24 ca_cert_bundle.pem\
+drwxr-xr-x 3 root root    1024 Mar  5 18:25 config\
+-rw-r--r-- 1 root root     422 Mar  5 18:27 coredump.json\
+drwxr-xr-x 4 root root    1024 Mar  1 18:19 dbus-1\
+lrwxrwxrwx 1 root root      20 Mar  5 19:23 dropbear -> /config/etc/dropbear\
+-rw-r--r-- 1 root root    1545 Mar  5 18:51 dvrLog.conf\
+-rw-r--r-- 1 root root     212 Mar  5 18:51 dvrTransmuxer.conf\
+-rw-r--r-- 1 root root     149 Mar  5 18:51 dvrTransmuxerLog.conf\
+-rw-r--r-- 1 root root    1327 Mar  5 18:15 fstab\
+-rw-r--r-- 1 root root     154 Mar  5 18:13 fw_env.config\
+-rw-r--r-- 1 root root     250 Mar  5 18:15 group\
+-rw-r--r-- 1 root root       6 Mar  5 19:23 hostname\
+-rw-r--r-- 1 root root      36 Mar  5 19:23 hosts\
+drwxr-xr-x 2 root root    1024 Mar  5 18:24 init.d\
+-rw-r--r-- 1 root root    1158 Mar  5 18:15 inittab\
+-rwxr-xr-x 1 root root     182 Mar  5 18:15 initusbd\
+-rwxr-xr-x 1 root root     168 Mar  5 18:15 initusbd_acm_ms\
+-rwxr-xr-x 1 root root     136 Mar  5 18:15 initusbdserial\
+-rw-r--r-- 1 root root    1180 Mar  5 18:15 inputrc\
+drwxr-xr-x 2 root root    1024 Mar  5 19:16 iproute2\
+-rw-r--r-- 1 root root      26 Mar  5 19:23 issue\
+-rw-r--r-- 1 root root      64 Mar  5 19:23 ld.so.cache\
+-rw-r--r-- 1 root root       0 Mar  5 19:23 ld.so.conf\
+drwxr-xr-x 2 root root    1024 Mar  5 18:15 ld.so.conf.d\
+-rw-r--r-- 1 root root    8334 Mar  5 18:13 led_color_map.json\
+-rw-r--r-- 1 root root    2819 Mar  5 18:22 localtime\
+-rw-r--r-- 1 root root     956 Mar  5 19:10 mke2fs.conf\
+lrwxrwxrwx 1 root root      12 Mar  5 18:15 mtab -> /proc/mounts\
+drwxr-xr-x 2 root root    1024 Mar  5 19:18 netplug\
+drwxr-xr-x 2 root root    1024 Mar  5 19:23 netplug.d\
+drwxr-xr-x 8 root root    1024 Mar  5 19:23 network\
+-rw-r--r-- 1 root root     230 Mar  5 19:23 nsswitch.conf\
+-rw-r--r-- 1 root root     276 Mar  5 18:22 ntp.conf\
+-rw-r--r-- 1 root root    9560 Mar  5 18:15 openssl.cnf\
+drwxr-xr-x 3 root root    1024 Mar  5 18:30 opt\
+-rw-r--r-- 1 root root    3905 Mar  5 19:08 original_dhclient.conf\
+-rw-r--r-- 1 root root     101 Mar  5 19:23 os-release\
+-rw-r--r-- 1 root root     641 Mar  5 18:15 passwd\
+drwxr-xr-x 3 root root    1024 Mar  5 19:23 ppp\
+-rw-r--r-- 1 root root    2052 Mar  5 18:15 profile\
+-rw-r--r-- 1 root root    1191 Mar  5 18:15 protocols\
+drwxr-xr-x 3 root root    1024 Mar  5 19:18 rc.d\
+-rw-r--r-- 1 root root     473 Mar  5 18:15 reader.conf\
+lrwxrwxrwx 1 root root      18 Mar  5 18:15 resolv.conf -> ../tmp/resolv.conf\
+-rw-r--r-- 1 root root    2570 Mar  5 18:13 rsyslog.conf\
+drwxr-xr-x 2 root root    1024 Mar  5 19:21 rsyslog.d\
+drwxr-xr-x 2 root root    1024 Mar  5 19:23 samba\
+-rw-r--r-- 1 root root     352 Mar  5 18:15 securetty\
+-rw-r--r-- 1 root root   10873 Mar  5 18:15 services\
+-rw------- 1 root root     380 Mar  5 18:15 shadow\
+-rw-r--r-- 1 root root    6739 Mar  5 19:21 smartd.conf\
+drwxr-xr-x 2 root root    1024 Mar  5 19:21 smartd_warning.d\
+-rwxr-xr-x 1 root root    5847 Mar  5 19:21 smartd_warning.sh\
+drwxr-xr-x 5 root root    1024 Mar  5 19:07 ssl\
+drwxr-xr-x 2 root root    1024 Mar  5 19:22 sysconfig\
+-rwxr-xr-x 1 root root     301 Mar  5 18:15 sysctrl.conf\
+-rw-r--r-- 1 root root     138 Mar  5 19:22 syslog.conf\
+drwxr-xr-x 3 root root    1024 Mar  5 18:29 upnp-md\
+-rw-r--r-- 1 root root     888 Mar  5 19:23 usb_modeswitch.conf\
+drwxr-xr-x 2 root root    1024 Mar  5 19:23 usb_modeswitch.d\
+-rw-r--r-- 1 root root     152 Mar  5 18:18 version.json\
+# \
+# \
+# \
+# \
+# \uc0\u8730 \
+-sh: \uc0\u8730 : not found\
+# \
+# \
+# \
+# \
+# vi dvrLog.conf\
+# \
+# \
+# \
+# \
+# \
+# mount -o remount rw /\
+# \
+# vi dvrLog.conf\
+\
+\cf2 \cb3   [Restored Mar 14, 2017, 9:33:48 AM]\cf0 \
+\cb1 Last login: Tue Mar 14 09:31:04 on console\
+Restored session: Mon Mar 13 16:40:57 PDT 2017\
+TCA0080ALMOCAMP:~ huanhe9$ cd GitHub/\
+TCA0080ALMOCAMP:GitHub huanhe9$ ls -l\
+total 2125536\
+drwxr-xr-x  18 huanhe9  USWIN\\Domain Users        612 Dec 28 10:07 App-E2E-Automation\
+-rw-r--r--   1 huanhe9  USWIN\\Domain Users  541336555 Jul 15  2016 App-E2E-Automation.zip\
+-rw-r--r--@  1 huanhe9  USWIN\\Domain Users  541336555 Jul 15  2016 App2.zip\
+drwxr-xr-x  15 huanhe9  USWIN\\Domain Users        510 Mar 13 15:16 DVR_python\
+drwxr-xr-x   6 huanhe9  USWIN\\Domain Users        204 Mar 13 14:00 DVR_python_backup\
+drwxr-xr-x  20 huanhe9  USWIN\\Domain Users        680 Feb 21 15:47 GitPython\
+drwxr-xr-x  19 huanhe9  USWIN\\Domain Users        646 Dec 28 11:14 Git_Python\
+drwxr-xr-x  17 huanhe9  USWIN\\Domain Users        578 Feb 23 12:02 OnCueDevTool\
+drwxr-xr-x  19 huanhe9  USWIN\\Domain Users        646 Dec 23 12:53 henry_python\
+-rw-r--r--   1 huanhe9  USWIN\\Domain Users        153 Sep  1  2016 local2.txt\
+-rw-r--r--   1 huanhe9  USWIN\\Domain Users        396 Sep  1  2016 local3.txt\
+-rwxrw-rw-   1 huanhe9  USWIN\\Domain Users          0 Sep  2  2016 local4.txt\
+drwx------@ 63 huanhe9  USWIN\\Domain Users       2142 Feb  2 15:00 testpythonhomework2\
+-rw-r--r--   1 huanhe9  USWIN\\Domain Users    5585196 Nov  4 16:57 testpythonhomework2192.168.1.103_dvr_client.log\
+TCA0080ALMOCAMP:GitHub huanhe9$ cd DVR_python\
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ pwd\
+/Users/huanhe9/GitHub/DVR_python\
+TCA0080ALMOCAMP:DVR_python huanhe9$ ls -l\
+total 272\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  17933 Mar 15 16:54 192.168.1.102-report1.txt\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  14964 Feb  2 13:28 Dvr_SOAK_test_end.py\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  14964 Mar 13 13:58 Dvr_SOAK_test_end_v1.py\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  16571 Mar 13 15:08 Dvr_SOAK_test_start.py\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  14148 Mar 13 13:57 Dvr_SOAK_test_start_v1.py\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users  17396 Mar 13 16:17 Dvr_SOAK_test_start_v2_remote.py\
+-rwxr--r--  1 huanhe9  USWIN\\Domain Users   4108 Oct  4 15:33 Mac_scp_file_from_vm_to_macbook.py\
+-rwxr--r--  1 huanhe9  USWIN\\Domain Users   4108 Mar 13 13:58 Mac_scp_file_from_vm_to_macbook_v1.py\
+-rwxrw-rw-  1 huanhe9  USWIN\\Domain Users   2576 Feb  2 14:50 Mac_ssh_start_monitor_dvr_proc.py\
+-rwxr--r--  1 huanhe9  USWIN\\Domain Users   2576 Mar 13 13:59 Mac_ssh_start_monitor_dvr_proc_v1.py\
+-rw-r--r--  1 huanhe9  USWIN\\Domain Users    735 Mar 13 15:36 segment_info.txt\
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ pwd\
+/Users/huanhe9/GitHub/DVR_python\
+TCA0080ALMOCAMP:DVR_python huanhe9$ \
+TCA0080ALMOCAMP:DVR_python huanhe9$ cd ..\
+TCA0080ALMOCAMP:GitHub huanhe9$ tar zcvf DVR_python.tgz DVR_python\
+a DVR_python\
+a DVR_python/.DS_Store\
+a DVR_python/.git\
+a DVR_python/192.168.1.102-report1.txt\
+a DVR_python/Dvr_SOAK_test_end.py\
+a DVR_python/Dvr_SOAK_test_end_v1.py\
+a DVR_python/Dvr_SOAK_test_start.py\
+a DVR_python/Dvr_SOAK_test_start_v1.py\
+a DVR_python/Dvr_SOAK_test_start_v2_remote.py\
+a DVR_python/Mac_scp_file_from_vm_to_macbook.py\
+a DVR_python/Mac_scp_file_from_vm_to_macbook_v1.py\
+a DVR_python/Mac_ssh_start_monitor_dvr_proc.py\
+a DVR_python/Mac_ssh_start_monitor_dvr_proc_v1.py\
+a DVR_python/segment_info.txt\
+a DVR_python/.git/COMMIT_EDITMSG\
+a DVR_python/.git/config\
+a DVR_python/.git/description\
+a DVR_python/.git/HEAD\
+a DVR_python/.git/hooks\
+a DVR_python/.git/index\
+a DVR_python/.git/info\
+a DVR_python/.git/logs\
+a DVR_python/.git/objects\
+a DVR_python/.git/refs\
+a DVR_python/.git/refs/heads\
+a DVR_python/.git/refs/tags\
+a DVR_python/.git/refs/heads/master\
+a DVR_python/.git/objects/0b\
+a DVR_python/.git/objects/10\
+a DVR_python/.git/objects/12\
+a DVR_python/.git/objects/18\
+a DVR_python/.git/objects/31\
+a DVR_python/.git/objects/32\
+a DVR_python/.git/objects/3d\
+a DVR_python/.git/objects/40\
+a DVR_python/.git/objects/69\
+a DVR_python/.git/objects/8d\
+a DVR_python/.git/objects/a4\
+a DVR_python/.git/objects/b0\
+a DVR_python/.git/objects/b6\
+a DVR_python/.git/objects/ba\
+a DVR_python/.git/objects/bd\
+a DVR_python/.git/objects/be\
+a DVR_python/.git/objects/bf\
+a DVR_python/.git/objects/d9\
+a DVR_python/.git/objects/e2\
+a DVR_python/.git/objects/f0\
+a DVR_python/.git/objects/f1\
+a DVR_python/.git/objects/fc\
+a DVR_python/.git/objects/info\
+a DVR_python/.git/objects/pack\
+a DVR_python/.git/objects/fc/fb5cb186303153fc746078d8d78f6e905b7c19\
+a DVR_python/.git/objects/f1/ec3dc95ce825f56029a3f540ce186e1f1517c4\
+a DVR_python/.git/objects/f0/654b5ced75900616a0d6d3c5d1562c7e6c34bd\
+a DVR_python/.git/objects/e2/f1b2a672e2a5e9baac71cc13f305a935c7b5ec\
+a DVR_python/.git/objects/d9/7ba5c3be82fdc94606321750b0fb6f1caa38cb\
+a DVR_python/.git/objects/bf/620c07d20718e645f240a6ff506c4b2f0830e6\
+a DVR_python/.git/objects/be/ec901cf90cc0d308799fe5a256a8299b549ae4\
+a DVR_python/.git/objects/bd/02f7b9a07072c90dff78906c2b5764c4fedfb8\
+a DVR_python/.git/objects/ba/9e906a7d499c355b0dca4e27ac67249358fb20\
+a DVR_python/.git/objects/b6/72c083789dbe60420374efc25f8257894390ba\
+a DVR_python/.git/objects/b0/fcb08b8c5db639dd95a46bbc416aa22153a5da\
+a DVR_python/.git/objects/a4/515c5d5476c8eee82049b3884901d9a2440eb2\
+a DVR_python/.git/objects/8d/311bdeafcc37066e49097f4835ec261d6ab917\
+a DVR_python/.git/objects/69/ba3cf920cedfbb874077bb36aa95e743e7d776\
+a DVR_python/.git/objects/40/c174208ac535fd45a74c42d117dcfd900aeb00\
+a DVR_python/.git/objects/3d/5c8f63d05387d90738c240703e29e90591d2cc\
+a DVR_python/.git/objects/32/aa6483d372ebd4dd1d4ab5dbd0a0c20a9cfe78\
+a DVR_python/.git/objects/31/92327a48522aa503c5b06814a875d52204626e\
+a DVR_python/.git/objects/18/0f4f47df06f37d3a190606d7b055d9a92387a3\
+a DVR_python/.git/objects/12/b7555ff1c42761df1e10beccc31a4431b78ff8\
+a DVR_python/.git/objects/10/066ecde4a3bd53c923949ad621bd9b6ae1ec28\
+a DVR_python/.git/objects/0b/668ee9012ca0adc616969c3980166673ddc75f\
+a DVR_python/.git/logs/HEAD\
+a DVR_python/.git/logs/refs\
+a DVR_python/.git/logs/refs/heads\
+a DVR_python/.git/logs/refs/heads/master\
+a DVR_python/.git/info/exclude\
+a DVR_python/.git/hooks/applypatch-msg.sample\
+a DVR_python/.git/hooks/commit-msg.sample\
+a DVR_python/.git/hooks/post-update.sample\
+a DVR_python/.git/hooks/pre-applypatch.sample\
+a DVR_python/.git/hooks/pre-commit.sample\
+a DVR_python/.git/hooks/pre-push.sample\
+a DVR_python/.git/hooks/pre-rebase.sample\
+a DVR_python/.git/hooks/pre-receive.sample\
+a DVR_python/.git/hooks/prepare-commit-msg.sample\
+a DVR_python/.git/hooks/update.sample\
+TCA0080ALMOCAMP:GitHub huanhe9$ ll -alsrt\
+-bash: ll: command not found\
+TCA0080ALMOCAMP:GitHub huanhe9$ ls -alsrt\
+total 2125656\
+1057304 -rw-r--r--@  1 huanhe9  USWIN\\Domain Users  541336555 Jul 15  2016 App2.zip\
+1057304 -rw-r--r--   1 huanhe9  USWIN\\Domain Users  541336555 Jul 15  2016 App-E2E-Automation.zip\
+      8 -rw-r--r--   1 huanhe9  USWIN\\Domain Users        396 Sep  1  2016 local3.txt\
+      8 -rw-r--r--   1 huanhe9  USWIN\\Domain Users        153 Sep  1  2016 local2.txt\
+      0 -rwxrw-rw-   1 huanhe9  USWIN\\Domain Users          0 Sep  2  2016 local4.txt\
+  10912 -rw-r--r--   1 huanhe9  USWIN\\Domain Users    5585196 Nov  4 16:57 testpythonhomework2192.168.1.103_dvr_client.log\
+      0 drwxr-xr-x  19 huanhe9  USWIN\\Domain Users        646 Dec 23 12:53 henry_python\
+      0 drwxr-xr-x   7 huanhe9  USWIN\\Domain Users        238 Dec 23 14:58 .idea\
+      0 drwxr-xr-x  13 huanhe9  USWIN\\Domain Users        442 Dec 27 18:09 .git\
+      0 drwxr-xr-x  18 huanhe9  USWIN\\Domain Users        612 Dec 28 10:07 App-E2E-Automation\
+      0 drwxr-xr-x  19 huanhe9  USWIN\\Domain Users        646 Dec 28 11:14 Git_Python\
+      0 drwx------@ 63 huanhe9  USWIN\\Domain Users       2142 Feb  2 15:00 testpythonhomework2\
+      0 drwxr-xr-x  20 huanhe9  USWIN\\Domain Users        680 Feb 21 15:47 GitPython\
+      0 drwxr-xr-x  17 huanhe9  USWIN\\Domain Users        578 Feb 23 12:02 OnCueDevTool\
+      0 drwxr-xr-x   6 huanhe9  USWIN\\Domain Users        204 Mar 13 14:00 DVR_python_backup\
+      0 drwxr-xr-x  15 huanhe9  USWIN\\Domain Users        510 Mar 13 15:16 DVR_python\
+      0 drwxr-xr-x+ 57 huanhe9  USWIN\\Domain Users       1938 Mar 15 09:15 ..\
+     40 -rw-r--r--@  1 huanhe9  USWIN\\Domain Users      18436 Mar 15 16:51 .DS_Store\
+     80 -rw-r--r--   1 huanhe9  USWIN\\Domain Users      37190 Mar 15 17:16 DVR_python.tgz\
+      0 drwxr-xr-x  20 huanhe9  USWIN\\Domain Users        680 Mar 15 17:16 .\
+TCA0080ALMOCAMP:GitHub huanhe9$ scp ./DVR_python.tgz babup@68.140.253.50:/home/babup/\
+babup@68.140.253.50's password: \
+DVR_python.tgz                                                                               100%   36KB  36.3KB/s   00:00    \
+TCA0080ALMOCAMP:GitHub huanhe9$ ssh babup@68.140.253.50\
+babup@68.140.253.50's password: \
+Welcome to Ubuntu 12.04.4 LTS (GNU/Linux 3.11.0-15-generic i686)\
+\
+ * Documentation:  https://help.ubuntu.com/\
+\
+  System information as of Wed Mar 15 17:06:48 PDT 2017\
+\
+  System load:  0.17              Processes:           476\
+  Usage of /:   7.9% of 44.89GB   Users logged in:     2\
+  Memory usage: 59%               IP address for eth0: 68.140.253.50\
+  Swap usage:   62%               IP address for eth1: 192.168.254.50\
+\
+  Graph this data and manage this system at:\
+    https://landscape.canonical.com/\
+\
+373 packages can be updated.\
+295 updates are security updates.\
+\
+New release '14.04.1 LTS' available.\
+Run 'do-release-upgrade' to upgrade to it.\
+\
+Last login: Wed Mar 15 16:47:09 2017 from 68.140.244.107\
+babup@master-vm4:~$ ls -l\
+total 32812\
+-rw-r--r-- 1 babup babup 33493861 Dec 16 15:28 bhr4_release_01.04.00.10_firmwareupgrade.bin.signed\
+drwxr-xr-x 2 babup babup     4096 Feb 23 11:09 
+\f1\b \cf4 Desktop
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Dec 30 16:21 
+\f1\b \cf4 Documents
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Downloads
+\f0\b0 \cf0 \
+-rw-r--r-- 1 babup babup    37190 Mar 15 17:06 
+\f1\b \cf5 DVR_python.tgz
+\f0\b0 \cf0 \
+-rw-r--r-- 1 babup babup     8445 Aug 10  2016 examples.desktop\
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Music
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Pictures
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Public
+\f0\b0 \cf0 \
+-rwxr-xr-x 1 babup babup     1562 Oct 25 10:05 
+\f1\b \cf6 showCounts.awk
+\f0\b0 \cf0 \
+drwxrwxr-x 7 babup babup     4096 Mar  2 13:30 
+\f1\b \cf4 temp
+\f0\b0 \cf0 \
+drwxrwxr-x 2 babup babup     4096 Feb  6 13:02 
+\f1\b \cf4 temp231_102
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Templates
+\f0\b0 \cf0 \
+drwxrwxr-x 2 babup babup     4096 Jan 12 17:33 
+\f1\b \cf4 utility
+\f0\b0 \cf0 \
+drwxr-xr-x 2 babup babup     4096 Aug 10  2016 
+\f1\b \cf4 Videos
+\f0\b0 \cf0 \
+babup@master-vm4:~$ mkdir henry\
+babup@master-vm4:~$ mv DVR_python.tgz ./henry/\
+babup@master-vm4:~$ cd henry/\
+babup@master-vm4:~/henry$ pwd\
+/home/babup/henry\
+babup@master-vm4:~/henry$ tar zxvf DVR_python.tgz \
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/._.DS_Store\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.DS_Store\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/192.168.1.102-report1.txt\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Dvr_SOAK_test_end.py\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Dvr_SOAK_test_end_v1.py\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Dvr_SOAK_test_start.py\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Dvr_SOAK_test_start_v1.py\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Dvr_SOAK_test_start_v2_remote.py\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Mac_scp_file_from_vm_to_macbook.py\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Mac_scp_file_from_vm_to_macbook_v1.py\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Mac_ssh_start_monitor_dvr_proc.py\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/Mac_ssh_start_monitor_dvr_proc_v1.py\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/segment_info.txt\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/COMMIT_EDITMSG\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/config\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/description\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/HEAD\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/index\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/info/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/logs/\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/refs/\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/refs/heads/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/refs/tags/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/refs/heads/master\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/0b/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/10/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/12/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/18/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/31/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/32/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/3d/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/40/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/69/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/8d/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/a4/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/b0/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/b6/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/ba/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/bd/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/be/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/bf/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/d9/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/e2/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/f0/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/f1/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/fc/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/info/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/pack/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/fc/fb5cb186303153fc746078d8d78f6e905b7c19\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/f1/ec3dc95ce825f56029a3f540ce186e1f1517c4\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/f0/654b5ced75900616a0d6d3c5d1562c7e6c34bd\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/e2/f1b2a672e2a5e9baac71cc13f305a935c7b5ec\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/d9/7ba5c3be82fdc94606321750b0fb6f1caa38cb\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/bf/620c07d20718e645f240a6ff506c4b2f0830e6\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/be/ec901cf90cc0d308799fe5a256a8299b549ae4\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/bd/02f7b9a07072c90dff78906c2b5764c4fedfb8\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/ba/9e906a7d499c355b0dca4e27ac67249358fb20\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/b6/72c083789dbe60420374efc25f8257894390ba\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/b0/fcb08b8c5db639dd95a46bbc416aa22153a5da\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/a4/515c5d5476c8eee82049b3884901d9a2440eb2\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/8d/311bdeafcc37066e49097f4835ec261d6ab917\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/69/ba3cf920cedfbb874077bb36aa95e743e7d776\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/40/c174208ac535fd45a74c42d117dcfd900aeb00\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/3d/5c8f63d05387d90738c240703e29e90591d2cc\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/32/aa6483d372ebd4dd1d4ab5dbd0a0c20a9cfe78\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/31/92327a48522aa503c5b06814a875d52204626e\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/18/0f4f47df06f37d3a190606d7b055d9a92387a3\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/12/b7555ff1c42761df1e10beccc31a4431b78ff8\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/10/066ecde4a3bd53c923949ad621bd9b6ae1ec28\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/objects/0b/668ee9012ca0adc616969c3980166673ddc75f\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/logs/HEAD\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/logs/refs/\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/logs/refs/heads/\
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/logs/refs/heads/master\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/info/exclude\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/applypatch-msg.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/commit-msg.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/post-update.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/pre-applypatch.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/pre-commit.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/pre-push.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/pre-rebase.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/pre-receive.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/prepare-commit-msg.sample\
+tar: Ignoring unknown extended header keyword `SCHILY.dev'\
+tar: Ignoring unknown extended header keyword `SCHILY.ino'\
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'\
+DVR_python/.git/hooks/update.sample\
+babup@master-vm4:~/henry$ ll\
+total 52\
+drwxrwxr-x  3 babup babup  4096 Mar 15 17:07 
+\f1\b \cf4 .
+\f0\b0 \cf0 /\
+drwxr-xr-x 28 babup babup  4096 Mar 15 17:07 
+\f1\b \cf4 ..
+\f0\b0 \cf0 /\
+drwxr-xr-x  3 babup babup  4096 Mar 13 15:16 
+\f1\b \cf4 DVR_python
+\f0\b0 \cf0 /\
+-rw-r--r--  1 babup babup 37190 Mar 15 17:06 
+\f1\b \cf5 DVR_python.tgz
+\f0\b0 \cf0 \
+babup@master-vm4:~/henry$ cd DVR_python/\
+babup@master-vm4:~/henry/DVR_python$ pwd\
+/home/babup/henry/DVR_python\
+babup@master-vm4:~/henry/DVR_python$ ls -l\
+total 136\
+-rw-r--r-- 1 babup babup 17933 Mar 15 16:54 192.168.1.102-report1.txt\
+-rw-r--r-- 1 babup babup 14964 Feb  2 13:28 Dvr_SOAK_test_end.py\
+-rw-r--r-- 1 babup babup 14964 Mar 13 13:58 Dvr_SOAK_test_end_v1.py\
+-rw-r--r-- 1 babup babup 16571 Mar 13 15:08 Dvr_SOAK_test_start.py\
+-rw-r--r-- 1 babup babup 14148 Mar 13 13:57 Dvr_SOAK_test_start_v1.py\
+-rw-r--r-- 1 babup babup 17396 Mar 13 16:17 Dvr_SOAK_test_start_v2_remote.py\
+-rwxr--r-- 1 babup babup  4108 Oct  4 15:33 
+\f1\b \cf6 Mac_scp_file_from_vm_to_macbook.py
+\f0\b0 \cf0 \
+-rwxr--r-- 1 babup babup  4108 Mar 13 13:58 
+\f1\b \cf6 Mac_scp_file_from_vm_to_macbook_v1.py
+\f0\b0 \cf0 \
+-rwxrw-r-- 1 babup babup  2576 Feb  2 14:50 
+\f1\b \cf6 Mac_ssh_start_monitor_dvr_proc.py
+\f0\b0 \cf0 \
+-rwxr--r-- 1 babup babup  2576 Mar 13 13:59 
+\f1\b \cf6 Mac_ssh_start_monitor_dvr_proc_v1.py
+\f0\b0 \cf0 \
+-rw-r--r-- 1 babup babup   735 Mar 13 15:36 segment_info.txt\
+babup@master-vm4:~/henry/DVR_python$ cp Dvr_SOAK_test_start.py Dvr_SOAK_test_start_1.py\
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ vi Dvr_SOAK_test_start_1.py \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ python Dvr_SOAK_test_start_1.py \
+Traceback (most recent call last):\
+  File "Dvr_SOAK_test_start_1.py", line 2, in <module>\
+    import paramiko\
+ImportError: No module named paramiko\
+babup@master-vm4:~/henry/DVR_python$ pip install paramiko\
+The program 'pip' is currently not installed.  You can install it by typing:\
+sudo apt-get install python-pip\
+babup@master-vm4:~/henry/DVR_python$ sudo apt-get install python-pip\
+[sudo] password for babup: \
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following packages were automatically installed and are no longer required:\
+  libnetfilter-conntrack3 libnl-route-3-200 dnsmasq-base usb-modeswitch-data iputils-arping usb-modeswitch libsysfs2\
+  modemmanager\
+Use 'apt-get autoremove' to remove them.\
+The following extra packages will be installed:\
+  python-setuptools\
+The following NEW packages will be installed:\
+  python-pip python-setuptools\
+0 upgraded, 2 newly installed, 0 to remove and 367 not upgraded.\
+Need to get 536 kB of archives.\
+After this operation, 1,467 kB of additional disk space will be used.\
+Do you want to continue [Y/n]? Y\
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main python-setuptools all 0.6.24-1ubuntu1 [441 kB]\
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe python-pip all 1.0-1build1 [95.1 kB]\
+Fetched 536 kB in 0s (804 kB/s)  \
+Selecting previously unselected package python-setuptools.\
+(Reading database ... 152175 files and directories currently installed.)\
+Unpacking python-setuptools (from .../python-setuptools_0.6.24-1ubuntu1_all.deb) ...\
+Selecting previously unselected package python-pip.\
+Unpacking python-pip (from .../python-pip_1.0-1build1_all.deb) ...\
+Processing triggers for man-db ...\
+Setting up python-setuptools (0.6.24-1ubuntu1) ...\
+Setting up python-pip (1.0-1build1) ...\
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ python\
+Python 2.7.3 (default, Sep 26 2013, 20:08:41) \
+[GCC 4.6.3] on linux2\
+Type "help", "copyright", "credits" or "license" for more information.\
+>>> \
+KeyboardInterrupt\
+>>> \
+babup@master-vm4:~/henry/DVR_python$ pip install paramiko\
+Downloading/unpacking paramiko\
+  Downloading paramiko-2.1.2.tar.gz (1.2Mb): 1.2Mb downloaded\
+  Running setup.py egg_info for package paramiko\
+    \
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Downloading cryptography-1.8.1.tar.gz (423Kb): 423Kb downloaded\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Downloading pyasn1-0.2.3.tar.gz (94Kb): 94Kb downloaded\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Downloading idna-2.5.tar.gz (130Kb): 130Kb downloaded\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Downloading asn1crypto-0.22.0.tar.gz (84Kb): 84Kb downloaded\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Downloading packaging-16.8.tar.gz (44Kb): 44Kb downloaded\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Downloading six-1.10.0.tar.gz\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Requirement already satisfied (use --upgrade to upgrade): distribute in /usr/lib/python2.7/dist-packages (from cryptography>=1.1->paramiko)\
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Downloading enum34-1.1.6.tar.gz (40Kb): 40Kb downloaded\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Downloading ipaddress-1.0.18.tar.gz\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Downloading cffi-1.9.1.tar.gz (407Kb): 407Kb downloaded\
+  Running setup.py egg_info for package cffi\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Downloading pyparsing-2.2.0.tar.gz (1.2Mb): 1.2Mb downloaded\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography>=1.1->paramiko)\
+  Downloading pycparser-2.17.tar.gz (231Kb): 231Kb downloaded\
+  Running setup.py egg_info for package pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+Installing collected packages: paramiko, cryptography, pyasn1, idna, asn1crypto, packaging, six, enum34, ipaddress, cffi, pyparsing, pycparser\
+  Running setup.py install for paramiko\
+    error: could not create '/usr/local/lib/python2.7/dist-packages/paramiko': Permission denied\
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/paramiko/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-fF6Zvk-record/install-record.txt:\
+    running install\
+\
+running build\
+\
+running build_py\
+\
+creating build\
+\
+creating build/lib.linux-i686-2.7\
+\
+creating build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/config.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/resource.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/message.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_client.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/win_pageant.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/transport.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/ecdsakey.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/channel.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/pkey.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_file.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/compress.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/primes.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/proxy.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/auth_handler.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/kex_group14.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/_winapi.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/util.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/server.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/kex_group1.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/kex_gss.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_server.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/dsskey.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/__init__.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/pipe.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/_version.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/hostkeys.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/rsakey.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/common.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/client.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/ber.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/py3compat.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/kex_gex.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_handle.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/agent.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/buffered_pipe.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_si.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/ssh_exception.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/packet.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/sftp_attr.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/file.py -> build/lib.linux-i686-2.7/paramiko\
+\
+copying paramiko/ssh_gss.py -> build/lib.linux-i686-2.7/paramiko\
+\
+running install_lib\
+\
+creating /usr/local/lib/python2.7/dist-packages/paramiko\
+\
+error: could not create '/usr/local/lib/python2.7/dist-packages/paramiko': Permission denied\
+\
+----------------------------------------\
+Command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/paramiko/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-fF6Zvk-record/install-record.txt failed with error code 1\
+Storing complete log in /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ sudo pip install paramiko\
+Downloading/unpacking paramiko\
+  Running setup.py egg_info for package paramiko\
+    \
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Requirement already satisfied (use --upgrade to upgrade): distribute in /usr/lib/python2.7/dist-packages (from cryptography>=1.1->paramiko)\
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package cffi\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+Installing collected packages: paramiko, cryptography, pyasn1, idna, asn1crypto, packaging, six, enum34, ipaddress, cffi, pyparsing, pycparser\
+  Running setup.py install for paramiko\
+    \
+  Running setup.py install for cryptography\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+    compilation terminated.\
+    Traceback (most recent call last):\
+      File "<string>", line 1, in <module>\
+      File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+        **keywords_with_side_effects(sys.argv)\
+      File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+        _setup_distribution = dist = klass(attrs)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+        self.fetch_build_eggs(attrs.pop('setup_requires'))\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+        parse_requirements(requires), installer=self.fetch_build_egg\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+        dist = best[req.key] = env.best_match(req, self, installer)\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+        return self.obtain(req, installer) # try and download/install\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+        return installer(requirement)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+        return cmd.easy_install(req)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+        return self.install_item(spec, dist.location, tmpdir, deps)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+        dists = self.install_eggs(spec, download, tmpdir)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+        return self.build_and_install(setup_script, setup_base)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+        self.run_setup(setup_script, setup_base, args)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+        raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+    distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-LJe138-record/install-record.txt:\
+    Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+\
+compilation terminated.\
+\
+Traceback (most recent call last):\
+\
+  File "<string>", line 1, in <module>\
+\
+  File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+\
+    **keywords_with_side_effects(sys.argv)\
+\
+  File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+\
+    _setup_distribution = dist = klass(attrs)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+\
+    self.fetch_build_eggs(attrs.pop('setup_requires'))\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+\
+    parse_requirements(requires), installer=self.fetch_build_egg\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+\
+    dist = best[req.key] = env.best_match(req, self, installer)\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+\
+    return self.obtain(req, installer) # try and download/install\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+\
+    return installer(requirement)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+\
+    return cmd.easy_install(req)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+\
+    return self.install_item(spec, dist.location, tmpdir, deps)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+\
+    dists = self.install_eggs(spec, download, tmpdir)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+\
+    return self.build_and_install(setup_script, setup_base)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+\
+    self.run_setup(setup_script, setup_base, args)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+\
+    raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+\
+distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+\
+----------------------------------------\
+Command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-LJe138-record/install-record.txt failed with error code 1\
+Storing complete log in /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ gcc\
+gcc: fatal error: no input files\
+compilation terminated.\
+babup@master-vm4:~/henry/DVR_python$ vi /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ sudo pip install paramiko | tee /tmp/ttt\
+Requirement already satisfied (use --upgrade to upgrade): paramiko in /usr/local/lib/python2.7/dist-packages\
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Requirement already satisfied (use --upgrade to upgrade): distribute in /usr/lib/python2.7/dist-packages (from cryptography>=1.1->paramiko)\
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package cffi\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+Installing collected packages: cryptography, pyasn1, idna, asn1crypto, packaging, six, enum34, ipaddress, cffi, pyparsing, pycparser\
+  Running setup.py install for cryptography\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+    compilation terminated.\
+    Traceback (most recent call last):\
+      File "<string>", line 1, in <module>\
+      File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+        **keywords_with_side_effects(sys.argv)\
+      File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+        _setup_distribution = dist = klass(attrs)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+        self.fetch_build_eggs(attrs.pop('setup_requires'))\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+        parse_requirements(requires), installer=self.fetch_build_egg\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+        dist = best[req.key] = env.best_match(req, self, installer)\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+        return self.obtain(req, installer) # try and download/install\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+        return installer(requirement)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+        return cmd.easy_install(req)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+        return self.install_item(spec, dist.location, tmpdir, deps)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+        dists = self.install_eggs(spec, download, tmpdir)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+        return self.build_and_install(setup_script, setup_base)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+        self.run_setup(setup_script, setup_base, args)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+        raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+    distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-YtoQfD-record/install-record.txt:\
+    Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+Package libffi was not found in the pkg-config search path.\
+\
+Perhaps you should add the directory containing `libffi.pc'\
+\
+to the PKG_CONFIG_PATH environment variable\
+\
+No package 'libffi' found\
+\
+c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+\
+compilation terminated.\
+\
+Traceback (most recent call last):\
+\
+  File "<string>", line 1, in <module>\
+\
+  File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+\
+    **keywords_with_side_effects(sys.argv)\
+\
+  File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+\
+    _setup_distribution = dist = klass(attrs)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+\
+    self.fetch_build_eggs(attrs.pop('setup_requires'))\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+\
+    parse_requirements(requires), installer=self.fetch_build_egg\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+\
+    dist = best[req.key] = env.best_match(req, self, installer)\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+\
+    return self.obtain(req, installer) # try and download/install\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+\
+    return installer(requirement)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+\
+    return cmd.easy_install(req)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+\
+    return self.install_item(spec, dist.location, tmpdir, deps)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+\
+    dists = self.install_eggs(spec, download, tmpdir)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+\
+    return self.build_and_install(setup_script, setup_base)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+\
+    self.run_setup(setup_script, setup_base, args)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+\
+    raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+\
+distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+\
+----------------------------------------\
+Command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-YtoQfD-record/install-record.txt failed with error code 1\
+Storing complete log in /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ vi /tmp/ttt\
+babup@master-vm4:~/henry/DVR_python$ sudo pip install --upgrade paramiko | tee /tmp/ttt\
+Downloading/unpacking paramiko\
+  Running setup.py egg_info for package paramiko\
+    \
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Downloading/unpacking distribute (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package distribute\
+    \
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package cffi\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    Package libffi was not found in the pkg-config search path.\
+    Perhaps you should add the directory containing `libffi.pc'\
+    to the PKG_CONFIG_PATH environment variable\
+    No package 'libffi' found\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking setuptools>=0.7 (from distribute->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package setuptools\
+    Traceback (most recent call last):\
+      File "<string>", line 3, in <module>\
+      File "setuptools/__init__.py", line 10, in <module>\
+        from six.moves import filter, map\
+    ImportError: No module named six.moves\
+    Complete output from command python setup.py egg_info:\
+    Traceback (most recent call last):\
+\
+  File "<string>", line 3, in <module>\
+\
+  File "setuptools/__init__.py", line 10, in <module>\
+\
+    from six.moves import filter, map\
+\
+ImportError: No module named six.moves\
+\
+----------------------------------------\
+Command python setup.py egg_info failed with error code 1\
+Storing complete log in /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ :q\
+:q: command not found\
+babup@master-vm4:~/henry/DVR_python$ apt-cache search libffi\
+libffi-dev - Foreign Function Interface library (development files)\
+libffi6 - Foreign Function Interface library runtime\
+libffi6-dbg - Foreign Function Interface library runtime (debug symbols)\
+lib64ffi-dev - Foreign Function Interface library (development files, 64bit)\
+libffi-ruby - Transitional package for ruby-ffi\
+libffi-ruby1.8 - Transitional package for ruby-ffi\
+libffi-ruby1.9.1 - Transitional package for ruby-ffi\
+libjffi-java - Java Foreign Function Interface\
+libjffi-jni - Java Foreign Function Interface (JNI library)\
+ruby-ffi - load dynamic libraries, bind functions from within ruby code\
+ffindex-dbg - simple index/database for huge amounts of small files (debug)\
+libffindex0 - library for simple index/database for huge amounts of small files\
+libffindex0-dev - library for simple index/database for huge amounts of small files (development)\
+babup@master-vm4:~/henry/DVR_python$ sudo apt-get install libffi-dev libffi6 libffi6-dbg lib64ffi-dev\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+libffi6 is already the newest version.\
+The following packages were automatically installed and are no longer required:\
+  libnetfilter-conntrack3 libnl-route-3-200 dnsmasq-base usb-modeswitch-data iputils-arping usb-modeswitch libsysfs2\
+  modemmanager\
+Use 'apt-get autoremove' to remove them.\
+The following extra packages will be installed:\
+  lib64ffi6 libc-bin libc-dev-bin libc6 libc6-amd64 libc6-dev\
+Suggested packages:\
+  glibc-doc\
+The following NEW packages will be installed:\
+  lib64ffi-dev lib64ffi6 libc6-amd64 libffi-dev libffi6-dbg\
+The following packages will be upgraded:\
+  libc-bin libc-dev-bin libc6 libc6-dev\
+4 upgraded, 5 newly installed, 0 to remove and 363 not upgraded.\
+Need to get 15.1 MB of archives.\
+After this operation, 11.7 MB of additional disk space will be used.\
+Do you want to continue [Y/n]? Y\
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-dev i386 2.15-0ubuntu10.15 [5,099 kB]\
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-dev-bin i386 2.15-0ubuntu10.15 [77.7 kB]\
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-bin i386 2.15-0ubuntu10.15 [1,127 kB]\
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 i386 2.15-0ubuntu10.15 [3,923 kB]\
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-amd64 i386 2.15-0ubuntu10.15 [4,602 kB]\
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise/main libffi-dev i386 3.0.11~rc1-5 [87.0 kB]\
+Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/main lib64ffi6 i386 3.0.11~rc1-5 [19.4 kB]\
+Get:8 http://us.archive.ubuntu.com/ubuntu/ precise/main lib64ffi-dev i386 3.0.11~rc1-5 [37.8 kB]\
+Get:9 http://us.archive.ubuntu.com/ubuntu/ precise/main libffi6-dbg i386 3.0.11~rc1-5 [91.1 kB]\
+Fetched 15.1 MB in 2s (5,156 kB/s)\
+Preconfiguring packages ...\
+(Reading database ... 152390 files and directories currently installed.)\
+Preparing to replace libc6-dev 2.15-0ubuntu10.5 (using .../libc6-dev_2.15-0ubuntu10.15_i386.deb) ...\
+Unpacking replacement libc6-dev ...\
+Preparing to replace libc-dev-bin 2.15-0ubuntu10.5 (using .../libc-dev-bin_2.15-0ubuntu10.15_i386.deb) ...\
+Unpacking replacement libc-dev-bin ...\
+Preparing to replace libc-bin 2.15-0ubuntu10.5 (using .../libc-bin_2.15-0ubuntu10.15_i386.deb) ...\
+Unpacking replacement libc-bin ...\
+Processing triggers for man-db ...\
+Setting up libc-bin (2.15-0ubuntu10.15) ...\
+(Reading database ... 152389 files and directories currently installed.)\
+Preparing to replace libc6 2.15-0ubuntu10.5 (using .../libc6_2.15-0ubuntu10.15_i386.deb) ...\
+Unpacking replacement libc6 ...\
+Setting up libc6 (2.15-0ubuntu10.15) ...\
+Processing triggers for libc-bin ...\
+ldconfig deferred processing now taking place\
+Selecting previously unselected package libc6-amd64.\
+(Reading database ... 152389 files and directories currently installed.)\
+Unpacking libc6-amd64 (from .../libc6-amd64_2.15-0ubuntu10.15_i386.deb) ...\
+Selecting previously unselected package libffi-dev.\
+Unpacking libffi-dev (from .../libffi-dev_3.0.11~rc1-5_i386.deb) ...\
+Selecting previously unselected package lib64ffi6.\
+Unpacking lib64ffi6 (from .../lib64ffi6_3.0.11~rc1-5_i386.deb) ...\
+Selecting previously unselected package lib64ffi-dev.\
+Unpacking lib64ffi-dev (from .../lib64ffi-dev_3.0.11~rc1-5_i386.deb) ...\
+Selecting previously unselected package libffi6-dbg.\
+Unpacking libffi6-dbg (from .../libffi6-dbg_3.0.11~rc1-5_i386.deb) ...\
+Processing triggers for install-info ...\
+Processing triggers for doc-base ...\
+Processing 1 added doc-base file...\
+Processing triggers for man-db ...\
+Setting up libc-dev-bin (2.15-0ubuntu10.15) ...\
+Setting up libc6-dev (2.15-0ubuntu10.15) ...\
+Setting up libc6-amd64 (2.15-0ubuntu10.15) ...\
+Setting up libffi-dev (3.0.11~rc1-5) ...\
+Setting up lib64ffi6 (3.0.11~rc1-5) ...\
+Setting up lib64ffi-dev (3.0.11~rc1-5) ...\
+Setting up libffi6-dbg (3.0.11~rc1-5) ...\
+Processing triggers for libc-bin ...\
+ldconfig deferred processing now taking place\
+babup@master-vm4:~/henry/DVR_python$ sudo pip install paramiko | tee /tmp/ttt\
+Requirement already satisfied (use --upgrade to upgrade): paramiko in /usr/local/lib/python2.7/dist-packages\
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Requirement already satisfied (use --upgrade to upgrade): distribute in /usr/lib/python2.7/dist-packages (from cryptography>=1.1->paramiko)\
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package cffi\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+Installing collected packages: cryptography, pyasn1, idna, asn1crypto, packaging, six, enum34, ipaddress, cffi, pyparsing, pycparser\
+  Running setup.py install for cryptography\
+    c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+    compilation terminated.\
+    Traceback (most recent call last):\
+      File "<string>", line 1, in <module>\
+      File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+        **keywords_with_side_effects(sys.argv)\
+      File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+        _setup_distribution = dist = klass(attrs)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+        self.fetch_build_eggs(attrs.pop('setup_requires'))\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+        parse_requirements(requires), installer=self.fetch_build_egg\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+        dist = best[req.key] = env.best_match(req, self, installer)\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+        return self.obtain(req, installer) # try and download/install\
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+        return installer(requirement)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+        return cmd.easy_install(req)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+        return self.install_item(spec, dist.location, tmpdir, deps)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+        dists = self.install_eggs(spec, download, tmpdir)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+        return self.build_and_install(setup_script, setup_base)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+        self.run_setup(setup_script, setup_base, args)\
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+        raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+    distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-KQy7fh-record/install-record.txt:\
+    c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory\
+\
+compilation terminated.\
+\
+Traceback (most recent call last):\
+\
+  File "<string>", line 1, in <module>\
+\
+  File "/home/babup/henry/DVR_python/build/cryptography/setup.py", line 335, in <module>\
+\
+    **keywords_with_side_effects(sys.argv)\
+\
+  File "/usr/lib/python2.7/distutils/core.py", line 112, in setup\
+\
+    _setup_distribution = dist = klass(attrs)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 221, in __init__\
+\
+    self.fetch_build_eggs(attrs.pop('setup_requires'))\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 245, in fetch_build_eggs\
+\
+    parse_requirements(requires), installer=self.fetch_build_egg\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 576, in resolve\
+\
+    dist = best[req.key] = env.best_match(req, self, installer)\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 821, in best_match\
+\
+    return self.obtain(req, installer) # try and download/install\
+\
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 833, in obtain\
+\
+    return installer(requirement)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 294, in fetch_build_egg\
+\
+    return cmd.easy_install(req)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 608, in easy_install\
+\
+    return self.install_item(spec, dist.location, tmpdir, deps)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 638, in install_item\
+\
+    dists = self.install_eggs(spec, download, tmpdir)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 828, in install_eggs\
+\
+    return self.build_and_install(setup_script, setup_base)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1105, in build_and_install\
+\
+    self.run_setup(setup_script, setup_base, args)\
+\
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1096, in run_setup\
+\
+    raise DistutilsError("Setup script exited with %s" % (v.args[0],))\
+\
+distutils.errors.DistutilsError: Setup script exited with error: command 'gcc' failed with exit status 1\
+\
+----------------------------------------\
+Command /usr/bin/python -c "import setuptools;__file__='/home/babup/henry/DVR_python/build/cryptography/setup.py';exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-KQy7fh-record/install-record.txt failed with error code 1\
+Storing complete log in /home/babup/.pip/pip.log\
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ vi /tmp/ttt\
+babup@master-vm4:~/henry/DVR_python$ sudo apt-get install python-dev\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following packages were automatically installed and are no longer required:\
+  libnetfilter-conntrack3 libnl-route-3-200 dnsmasq-base usb-modeswitch-data iputils-arping usb-modeswitch libsysfs2\
+  modemmanager\
+Use 'apt-get autoremove' to remove them.\
+The following extra packages will be installed:\
+  libexpat1 libexpat1-dev libpython2.7 libssl-dev libssl-doc libssl1.0.0 python2.7 python2.7-dev python2.7-minimal zlib1g-dev\
+Suggested packages:\
+  python2.7-doc binfmt-support\
+The following NEW packages will be installed:\
+  libexpat1-dev libssl-dev libssl-doc python-dev python2.7-dev zlib1g-dev\
+The following packages will be upgraded:\
+  libexpat1 libpython2.7 libssl1.0.0 python2.7 python2.7-minimal\
+5 upgraded, 6 newly installed, 0 to remove and 358 not upgraded.\
+Need to get 38.7 MB of archives.\
+After this operation, 44.1 MB of additional disk space will be used.\
+Do you want to continue [Y/n]? Y\
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 i386 1.0.1-4ubuntu5.39 [1,012 kB]\
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libexpat1 i386 2.0.1-7.2ubuntu1.4 [131 kB]\
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpython2.7 i386 2.7.3-0ubuntu3.9 [1,148 kB]\
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7 i386 2.7.3-0ubuntu3.9 [2,651 kB]\
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7-minimal i386 2.7.3-0ubuntu3.9 [1,695 kB]\
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libexpat1-dev i386 2.0.1-7.2ubuntu1.4 [207 kB]\
+Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/main zlib1g-dev i386 1:1.2.3.4.dfsg-3ubuntu4 [162 kB]\
+Get:8 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-dev i386 1.0.1-4ubuntu5.39 [1,430 kB]\
+Get:9 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-doc all 1.0.1-4ubuntu5.39 [1,044 kB]\
+Get:10 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7-dev i386 2.7.3-0ubuntu3.9 [29.3 MB]\
+Get:11 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python-dev i386 2.7.3-0ubuntu2.2 [1,098 B]                   \
+Fetched 38.7 MB in 8s (4,434 kB/s)                                                                                            \
+Preconfiguring packages ...\
+(Reading database ... 152748 files and directories currently installed.)\
+Preparing to replace libssl1.0.0 1.0.1-4ubuntu5.11 (using .../libssl1.0.0_1.0.1-4ubuntu5.39_i386.deb) ...\
+Unpacking replacement libssl1.0.0 ...\
+Setting up libssl1.0.0 (1.0.1-4ubuntu5.39) ...\
+Processing triggers for libc-bin ...\
+ldconfig deferred processing now taking place\
+(Reading database ... 152748 files and directories currently installed.)\
+Preparing to replace libexpat1 2.0.1-7.2ubuntu1.1 (using .../libexpat1_2.0.1-7.2ubuntu1.4_i386.deb) ...\
+Unpacking replacement libexpat1 ...\
+Preparing to replace libpython2.7 2.7.3-0ubuntu3.4 (using .../libpython2.7_2.7.3-0ubuntu3.9_i386.deb) ...\
+Unpacking replacement libpython2.7 ...\
+Preparing to replace python2.7 2.7.3-0ubuntu3.4 (using .../python2.7_2.7.3-0ubuntu3.9_i386.deb) ...\
+Unpacking replacement python2.7 ...\
+Preparing to replace python2.7-minimal 2.7.3-0ubuntu3.4 (using .../python2.7-minimal_2.7.3-0ubuntu3.9_i386.deb) ...\
+Unpacking replacement python2.7-minimal ...\
+Processing triggers for man-db ...\
+Processing triggers for desktop-file-utils ...\
+Processing triggers for bamfdaemon ...\
+Rebuilding /usr/share/applications/bamf.index...\
+Processing triggers for gnome-menus ...\
+Setting up python2.7-minimal (2.7.3-0ubuntu3.9) ...\
+Selecting previously unselected package libexpat1-dev.\
+(Reading database ... 152748 files and directories currently installed.)\
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.0.1-7.2ubuntu1.4_i386.deb) ...\
+Selecting previously unselected package zlib1g-dev.\
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_i386.deb) ...\
+Selecting previously unselected package libssl-dev.\
+Unpacking libssl-dev (from .../libssl-dev_1.0.1-4ubuntu5.39_i386.deb) ...\
+Selecting previously unselected package libssl-doc.\
+Unpacking libssl-doc (from .../libssl-doc_1.0.1-4ubuntu5.39_all.deb) ...\
+Selecting previously unselected package python2.7-dev.\
+Unpacking python2.7-dev (from .../python2.7-dev_2.7.3-0ubuntu3.9_i386.deb) ...\
+Selecting previously unselected package python-dev.\
+Unpacking python-dev (from .../python-dev_2.7.3-0ubuntu2.2_i386.deb) ...\
+Processing triggers for doc-base ...\
+Processing 1 added doc-base file...\
+Processing triggers for man-db ...\
+Setting up libexpat1 (2.0.1-7.2ubuntu1.4) ...\
+Setting up python2.7 (2.7.3-0ubuntu3.9) ...\
+Setting up libpython2.7 (2.7.3-0ubuntu3.9) ...\
+Setting up libexpat1-dev (2.0.1-7.2ubuntu1.4) ...\
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...\
+Setting up libssl-dev (1.0.1-4ubuntu5.39) ...\
+Setting up libssl-doc (1.0.1-4ubuntu5.39) ...\
+Setting up python2.7-dev (2.7.3-0ubuntu3.9) ...\
+Setting up python-dev (2.7.3-0ubuntu2.2) ...\
+Processing triggers for libc-bin ...\
+ldconfig deferred processing now taking place\
+babup@master-vm4:~/henry/DVR_python$ sudo pip install paramiko | tee /tmp/ttt\
+Requirement already satisfied (use --upgrade to upgrade): paramiko in /usr/local/lib/python2.7/dist-packages\
+Downloading/unpacking cryptography>=1.1 (from paramiko)\
+  Running setup.py egg_info for package cryptography\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+Downloading/unpacking pyasn1>=0.1.7 (from paramiko)\
+  Running setup.py egg_info for package pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+Downloading/unpacking idna>=2.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+Downloading/unpacking asn1crypto>=0.21.0 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package asn1crypto\
+    \
+Downloading/unpacking packaging (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+Downloading/unpacking six>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+Requirement already satisfied (use --upgrade to upgrade): distribute in /usr/lib/python2.7/dist-packages (from cryptography>=1.1->paramiko)\
+Downloading/unpacking enum34 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package enum34\
+    \
+Downloading/unpacking ipaddress (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package ipaddress\
+    \
+Downloading/unpacking cffi>=1.4.1 (from cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package cffi\
+    \
+Downloading/unpacking pyparsing (from packaging->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pyparsing\
+    \
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography>=1.1->paramiko)\
+  Running setup.py egg_info for package pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+Installing collected packages: cryptography, pyasn1, idna, asn1crypto, packaging, six, enum34, ipaddress, cffi, pyparsing, pycparser\
+  Running setup.py install for cryptography\
+    \
+    Installed /home/babup/henry/DVR_python/build/cryptography/cffi-1.9.1-py2.7-linux-i686.egg\
+    Searching for pycparser\
+    Reading http://pypi.python.org/simple/pycparser/\
+    Best match: pycparser 2.17\
+    Downloading https://pypi.python.org/packages/be/64/1bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac/pycparser-2.17.tar.gz#md5=ca98dcb50bc1276f230118f6af5a40c7\
+    Processing pycparser-2.17.tar.gz\
+    Running pycparser-2.17/setup.py -q bdist_egg --dist-dir /tmp/easy_install-3QxD1f/pycparser-2.17/egg-dist-tmp-DDP5Fj\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+    zip_safe flag not set; analyzing archive contents...\
+    pycparser.ply.lex: module references __file__\
+    pycparser.ply.lex: module MAY be using inspect.getsourcefile\
+    pycparser.ply.yacc: module refere\
+nces __file__\
+    pycparser.ply.yacc: module MAY be using inspect.getsourcefile\
+    pycparser.ply.yacc: module MAY be using inspect.stack\
+    pycparser.ply.ygen: module references __file__\
+    \
+    Installed /home/babup/henry/DVR_python/build/cryptography/pycparser-2.17-py2.7.egg\
+    \
+    no previously-included directories found matching 'docs/_build'\
+    warning: no previously-included files matching '*' found under directory 'vectors'\
+    generating cffi module 'build/temp.linux-i686-2.7/_padding.c'\
+    generating cffi module 'build/temp.linux-i686-2.7/_constant_time.c'\
+    generating cffi module 'build/temp.linux-i686-2.7/_openssl.c'\
+    building '_openssl' extension\
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c build/temp.linux-i686-2.7/_openssl.c -o build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_openssl.o\
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_openssl.o -lssl -lcrypto -o build/lib.linux-i686-2.7/cryptography/hazmat/bindings/_openssl.so\
+    building '_constant_time' extension\
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c build/temp.linux-i686-2.7/_constant_time.c -o build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_constant_time.o\
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_constant_time.o -o build/lib.linux-i686-2.7/cryptography/hazmat/bindings/_constant_time.so\
+    building '_padding' extension\
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c build/temp.linux-i686-2.7/_padding.c -o build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_padding.o\
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-i686-2.7/build/temp.linux-i686-2.7/_padding.o -o build/lib.linux-i686-2.7/cryptography/hazmat/bindings/_padding.so\
+  Running setup.py install for pyasn1\
+    \
+    no previously-included directories found matching 'doc/build'\
+    no previously-included directories found matching 'doc/source/.templates'\
+  Running setup.py install for idna\
+    \
+    warning: no previously-included files matching '*.pyc' found under directory 'tools'\
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'\
+  Running setup.py install for asn1crypto\
+    \
+  Running setup.py install for packaging\
+    \
+    warning: no previously-included files found matching '.travis.yml'\
+    warning: no previously-included files found matching 'dev-requirements.txt'\
+    no previously-included directories found matching 'docs/_build'\
+    no previously-included directories found matching 'tasks'\
+  Running setup.py install for six\
+    \
+    no previously-included directories found matching 'documentation/_build'\
+  Running setup.py install for enum34\
+    \
+  Running setup.py install for ipaddress\
+    \
+  Running setup.py install for cffi\
+    building '_cffi_backend' extension\
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DUSE__THREAD -I/usr/include/python2.7 -c c/_cffi_backend.c -o build/temp.linux-i686-2.7/c/_cffi_backend.o\
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-i686-2.7/c/_cffi_backend.o -lffi -o build/lib.linux-i686-2.7/_cffi_backend.so\
+    \
+  Running setup.py install for pyparsing\
+    \
+  Running setup.py install for pycparser\
+    \
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'\
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'\
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'\
+    Build the lexing/parsing tables\
+Successfully installed cryptography pyasn1 idna asn1crypto packaging six enum34 ipaddress cffi pyparsing pycparser\
+Cleaning up...\
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ sudo pip install paramiko | tee /tmp/tttc^C\
+babup@master-vm4:~/henry/DVR_python$ history |grep Dvr\
+ 1696  cp 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start.py 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py\
+ 1697  vi 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py \
+ 1698  python 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py \
+ 1716  history |grep 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 \
+babup@master-vm4:~/henry/DVR_python$ !1698\
+python Dvr_SOAK_test_start_1.py \
+/usr/local/lib/python2.7/dist-packages/paramiko/client.py:683: UserWarning: Unknown ssh-rsa host key for 192.168.231.102: e9d7e0cde3927aa34383a64496e1f473\
+  (key.get_name(), hostname, hexlify(key.get_fingerprint())))\
+#### Test: Dvr_SOAK_test_start.py  ####\
+#### Test: test start  ####\
+#### Test1: Get DVR app version and client build ####\
+\{ "project":"dvr", "version_string":"1.16.1654", "branch":"dvr_GA", "build_flavor" : "release", "build_number":"108010" \}\
+\
+\{"version_string": "1.16.1654", "build_number": "108010", "pretty_name": "dvr_GA", "flavor_id": "112257", "branch": "dvr_GA", "build_flavor": "release"\}\
+#### Test2: Get DVR system uptime ####\
+2017-03-15 11:24:40\
+\
+up 6 hours, 11 minutes\
+\
+#### Test3: Check archieved logs for app crashes ####\
+#### Test3.1: Check archieved logs ####\
+\
+Wed Mar 15 17:35:52 PDT 2017\
+\
+#### Test3.2: Check app crashes ####\
+total 452K\
+drwxrw-rw- 2 root root 4.0K Mar  5 14:06 .\
+-rw------- 1 root root  891 Mar 12 15:49 dvr_client.4.1.log\
+-rw------- 1 root root  35K Mar 12 19:49 dvr_client.5.1.log\
+-rw------- 1 root root  35K Mar 12 23:49 dvr_client.6.1.log\
+-rw------- 1 root root  64K Mar 13 11:49 dvr_client.3.1.log\
+-rw------- 1 root root 191K Mar 14 16:01 dvr_client.1.1.log\
+-rw------- 1 root root 110K Mar 14 20:01 dvr_client.2.1.log\
+drwxr-xr-x 6 root root 4.0K Mar 15 11:33 ..\
+\
+Wed Mar 15 17:35:52 PDT 2017\
+\
+#### Test4: Record dvr_client CPU, Mem usages ####\
+%CPU %MEM CMD\
+ 5.2  7.3 /data/app/dvr_client\
+\
+#### Test5: Record total CPU usage ####\
+Linux 3.14.29 (Fios-TV-DVR57B88C6A) 	03/15/17 	_armv7l_	(2 CPU)\
+\
+17:35:52        CPU     %user     %nice   %system   %iowait    %steal     %idle\
+17:35:54        all      5.94      0.00      1.73      5.69      0.00     86.63\
+17:35:56        all      2.49      0.00      1.24      1.24      0.00     95.02\
+17:35:58        all      1.74      0.00      1.00      9.20      0.00     88.06\
+17:36:00        all      1.49      0.00      1.24      2.74      0.00     94.53\
+17:36:02        all      1.49      0.00      1.24      0.50      0.00     96.77\
+Average:        all      2.63      0.00      1.29      3.88      0.00     92.20\
+\
+#### Test6: Record Hard Drive spaces under /hd/data/www ####\
+total 180K\
+-rwxr--r--   1 root root  523 Dec 31  1969 index.html\
+drwxr-xr-x   9 root root 4.0K Mar  6 10:59 .\
+drwxr-xr-x   2 root root 4.0K Mar  7 16:00 NESNAT\
+drwxr-xr-x   2 root root 4.0K Mar  9 22:47 deleteRecordings\
+drwxr-xr-x 326 root root  44K Mar 15 11:25 KMTPDT\
+drwxr-xr-x   6 root root 4.0K Mar 15 11:33 ..\
+drwxr-xr-x 265 root root  28K Mar 15 12:57 KNTVDT\
+drwxr-xr-x 214 root root  24K Mar 15 12:57 KGODT\
+drwxr-xr-x 249 root root  32K Mar 15 16:02 KPIXDT\
+drwxr-xr-x 238 root root  20K Mar 15 16:02 KTVUDT\
+\
+\
+#### Test7: Record multicast channel spaces under /hd/data/www and recording activity ####\
+#### Test7.1: Record multicast channel spaces under /hd/data/www ####\
+\
+#### Test7.2: Record multicast channel recording activity under /hd/data/www ####\
+drwxr-xr-x 2 root root 120K Mar 15 13:04 /hd/data/www/KPIXDT/1340647/\
+drwxr-xr-x 2 root root  64K Mar 15 13:04 /hd/data/www/KTVUDT/1340647/\
+drwxr-xr-x 2 root root 100K Mar 15 15:07 /hd/data/www/KPIXDT/1340653/\
+drwxr-xr-x 2 root root  52K Mar 15 15:07 /hd/data/www/KTVUDT/1340653/\
+drwxr-xr-x 2 root root 324K Mar 15 15:25 /hd/data/www/KPIXDT/1340654/\
+drwxr-xr-x 2 root root 152K Mar 15 15:25 /hd/data/www/KTVUDT/1340654/\
+drwxr-xr-x 2 root root 300K Mar 15 15:44 /hd/data/www/KPIXDT/1340655/\
+drwxr-xr-x 2 root root 168K Mar 15 15:44 /hd/data/www/KTVUDT/1340655/\
+drwxr-xr-x 2 root root 324K Mar 15 16:02 /hd/data/www/KPIXDT/1340656/\
+drwxr-xr-x 2 root root 172K Mar 15 16:02 /hd/data/www/KTVUDT/1340656/\
+drwxr-xr-x 2 root root 4.0K Mar 15 16:03 /hd/data/www/KTVUDT/1340657/\
+drwxr-xr-x 2 root root  36K Mar 15 16:04 /hd/data/www/KPIXDT/1340657/\
+\
+Wed Mar 15 17:36:15 PDT 2017\
+\
+#### Test8: Record multicast KGODT channel segments ####\
+KGODT_2e96.m4a_start = 188826\
+\
+\
+KGODT_5e192.m4a_start = 188826\
+\
+\
+KGODT_01MBt.m4v_start = 94413\
+\
+\
+KGODT_1MBm.m4v_start = 94411\
+\
+\
+KGODT_5MBm.m4v_start = 94412\
+\
+\
+#### Test9: Record multicast KPIXDT channel segments ####\
+KPIXDT_2e96.m4a_start = 239952\
+\
+\
+KPIXDT_5e192.m4a_start = 239952\
+\
+\
+\
+\
+\
+\
+^C\
+\
+\
+^Z\
+[1]+  Stopped                 python Dvr_SOAK_test_start_1.py\
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ \
+babup@master-vm4:~/henry/DVR_python$ history |grep Dvr\
+ 1696  cp 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start.py 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py\
+ 1697  vi 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py \
+ 1698  python 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py \
+ 1716  history |grep 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 \
+ 1717  python 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 _SOAK_test_start_1.py \
+ 1718  history |grep 
+\f1\b \cf5 Dvr
+\f0\b0 \cf0 \
+babup@master-vm4:~/henry/DVR_python$ history\
+  720  ssh root@192.168.234.100\
+  721  ping 192.168.234.100\
+  722  ssh root@192.168.234.100\
+  723  ping 192.168.233.101\
+  724  ssh root@192.168.233.101\
+  725  ping 192.168.232.100\
+  726  ssh root@192.168.232.100\
+  727  pwd\
+  728  ssh root@192.168.231.102\
+  729  ping 192.168.231.102\
+  730  ssh root@192.168.231.102\
+  731  ping 192.168.232.100\
+  732  ssh root@192.168.232.100\
+  733  ssh root@192.168.233.101\
+  734  ssh root@192.168.234.100\
+  735  ssh root@192.168.231.102\
+  736  ping 192.168.231.102\
+  737  ssh root@192.168.231.102\
+  738  ping 192.168.232.100\
+  739  ssh root@192.168.232.100\
+  740  ls -l\
+  741  cd temp231_102/\
+  742  ls -l\
+  743  rm *\
+  744  ls -l\
+  745  pwd\
+  746  scp -r root@192.168.231.102:/hd/data/Output2* .\
+  747  scp -r root@192.168.231.102:/hd/data/Output_a2* .\
+  748  ls -l\
+  749  pwd\
+  750  ssh root@192.168.233.101\
+  751  ssh root@192.168.231.102\
+  752  ls -l\
+  753  cd temp231_102/\
+  754  ls -l\
+  755  scp -r root@192.168.231.102:/var/log/archived/crashlogmgr* .\
+  756  pwd\
+  757  ls -l\
+  758  cd ..\
+  759  ls -l\
+  760  cd temp231_102/\
+  761  scp -r root@192.168.231.102:/var/log/archived/crashlogmgr* .\
+  762  scp -r root@192.168.231.102:/var/log/archived/crashlogmgr*.log .\
+  763  pwd\
+  764  ls -l\
+  765  rm *\
+  766  ls -l\
+  767  pwd\
+  768  ls -l\
+  769  scp -r root@192.168.231.102:/var/log/archived/crashlogmgr*.log .\
+  770  scp -r root@192.168.233.101:/var/log/archived/crashlogmgr*.log .\
+  771  scp -r root@192.168.233.101:/var/log/archived/dvr_client.2.log   .\
+  772  ls -l\
+  773  scp -r root@192.168.233.101:/var/log/oncueapp/dvr_client.log   .\
+  774  ls -l\
+  775  scp -r root@192.168.233.101:/var/log/sys.log  .\
+  776  ls -l\
+  777  pwd\
+  778  ssh root@192.168.232.100\
+  779  ping 192.168.233.101\
+  780  ssh root@192.168.233.101\
+  781  pwd\
+  782  ls -l\
+  783  ssh root@192.168.233.101\
+  784  ping 192.168.233.101\
+  785  ssh root@192.168.233.101\
+  786  ssh root@192.168.232.100\
+  787  ping 192.168.232.100\
+  788  ssh root@192.168.232.100\
+  789  killall firefox\
+  790  sudo killall firefox\
+  791  ping 192.168.232.1\
+  792  firefox\
+  793  ssh root@192.168.234.152\
+  794  ping 192.168.234.152\
+  795  ssh root@192.168.234.152\
+  796  ssh root@192.168.232.104\
+  797  ping 192.168.232.104\
+  798  ssh root@192.168.232.104\
+  799  ssh root@192.168.231.101\
+  800  ping 192.168.231.101\
+  801  ssh root@192.168.231.101\
+  802  ping 192.168.231.101\
+  803  ssh root@192.168.231.101\
+  804  ping 192.168.231.101\
+  805  ssh root@192.168.231.101\
+  806  ping 192.168.231.101\
+  807  ssh root@192.168.231.101\
+  808  cd /hd/data\
+  809  pwd\
+  810  ssh root@192.168.231.101\
+  811  ping 192.168.231.101\
+  812  ping 192.168.231.102\
+  813  ssh root@192.168.231.102\
+  814  ls -l\
+  815  cd temp231_102/\
+  816  ls -l\
+  817  rm *\
+  818  scp -r root@192.168.231.102:/var/log/crashlogmgr/* .\
+  819  scp -r root@192.168.231.102:/var/log/sys.log .\
+  820  scp -r root@192.168.231.102:/var/log/oncueapp/* .\
+  821  ls -l\
+  822  pwd\
+  823  ssh root@192.168.233.101\
+  824  pwd\
+  825  ls -l\
+  826  cd temp231_102/\
+  827  ls -l\
+  828  rm *\
+  829  scp -r root@192.168.231.102:/hd/data/Output2* .\
+  830  scp -r root@192.168.231.102:/hd/data/Output_a2*  .\
+  831  pwd\
+  832  ssh root@192.168.231.102\
+  833  ssh root@192.168.232.100\
+  834  ssh root@192.168.233.101\
+  835  ssh root@192.168.234.100\
+  836  ssh root@192.168.231.102\
+  837  ping 192.168.231.102\
+  838  ssh root@192.168.231.102\
+  839  ping 192.168.231.102\
+  840  ssh root@192.168.231.102\
+  841  ssh root@192.168.232.100\
+  842  ssh root@192.168.231.102\
+  843  ping 192.168.231.102\
+  844  ssh root@192.168.231.102\
+  845  ssh root@192.168.232.100\
+  846  ping 192.168.232.100\
+  847  ssh root@192.168.232.100\
+  848  ping 192.168.233.101\
+  849  ssh root@192.168.233.101\
+  850  ping 192.168.234.100\
+  851  ssh root@192.168.234.100\
+  852  ping 192.168.234.100\
+  853  ssh root@192.168.234.100\
+  854  ping 192.168.234.100\
+  855  ssh root@192.168.234.100\
+  856  ssh root@192.168.233.101\
+  857  ssh root@192.168.232.100\
+  858  ssh root@192.168.231.102\
+  859  ssh root@192.168.234.100\
+  860  ssh root@192.168.231.102\
+  861  ssh root@192.168.234.100\
+  862  ping 192.168.234.100\
+  863  ssh root@192.168.234.100\
+  864  ssh root@192.168.231.102\
+  865  pwd\
+  866  ls -l\
+  867  ssh root@192.168.231.102\
+  868  ping 192.168.231.102\
+  869  ssh root@192.168.231.102\
+  870  ssh root@192.168.232.100\
+  871  ssh root@192.168.233.101\
+  872  ssh root@192.168.234.100\
+  873  ping 192.168.234.100\
+  874  ssh root@192.168.234.100\
+  875  ping 192.168.234.100\
+  876  ssh root@192.168.234.100\
+  877  ssh root@192.168.231.102\
+  878  ssh root@192.168.233.101\
+  879  ping 192.168.233.101\
+  880  ssh root@192.168.233.101\
+  881  ssh root@192.168.232.100\
+  882  ping 192.168.232.100\
+  883  ssh root@192.168.232.100\
+  884  ssh root@192.168.234.100\
+  885  ping 192.168.234.100\
+  886  ssh root@192.168.234.100\
+  887  ssh root@192.168.232.100\
+  888  ssh root@192.168.234.100\
+  889  ping 192.168.234.100\
+  890  ssh root@192.168.234.100\
+  891  ping 192.168.234.100\
+  892  ssh root@192.168.234.100\
+  893  ping 192.168.234.100\
+  894  ssh root@192.168.234.100\
+  895  ssh root@192.168.231.102\
+  896  ping 192.168.231.102\
+  897  ssh root@192.168.231.102\
+  898  ping 192.168.232.100\
+  899  ssh root@192.168.232.100\
+  900  ping 192.168.233.101\
+  901  ssh root@192.168.233.101\
+  902  ping 192.168.234.100\
+  903  ssh root@192.168.234.100\
+  904  pwd\
+  905  ls -l\
+  906  cd temp\
+  907  ls -l\
+  908  cd temp231\
+  909  ls -l\
+  910  cd ..\
+  911  cd temp234\
+  912  ls -l\
+  913  pwd\
+  914  ssh root@192.168.234.100\
+  915  ssh root@192.168.233.101\
+  916  ssh root@192.168.232.101\
+  917  ssh root@192.168.232.100\
+  918  pwd\
+  919  cd ..\
+  920  ls -l\
+  921  cd temp231\
+  922  ls -l\
+  923  scp -r root@192.168.231.102:/hd/data/Output2* .\
+  924  scp -r root@192.168.231.102:/hd/data/Output_a2* .\
+  925  ls -l\
+  926  pwd\
+  927  cd ..\
+  928  ls -l\
+  929  cd temp234\
+  930  ls -l\
+  931  scp -r root@192.168.234.100:/hd/data/Output2* .\
+  932  cd ..\
+  933  ls -l\
+  934  pwd\
+  935  cd ..\
+  936  ls -l\
+  937  cd utility/\
+  938  ls -l\
+  939  pwd\
+  940  scp -r * root@192.168.231.102:/hd/data\
+  941  scp -r * root@192.168.231.102:/hd/data/\
+  942  scp -r * root@192.168.232.100:/hd/data/\
+  943  scp -r * root@192.168.233.101:/hd/data/\
+  944  scp -r * root@192.168.232.100:/hd/data/\
+  945  ssh root@192.168.231.102\
+  946  ping 192.168.231.102\
+  947  ssh root@192.168.231.102\
+  948  ssh root@192.168.233.101\
+  949  ping 192.168.233.101\
+  950  ssh root@192.168.233.101\
+  951  ping 192.168.233.101\
+  952  ssh root@192.168.233.101\
+  953  ssh root@192.168.234.100\
+  954  ping 192.168.234.100\
+  955  ssh root@192.168.234.100\
+  956  ping 192.168.234.100\
+  957  ssh root@192.168.234.100\
+  958  ping 192.168.234.100\
+  959  ssh root@192.168.234.100\
+  960  fconfig -a\
+  961  ssh root@192.168.234.100\
+  962  ssh root@192.168.232.100\
+  963  ping 192.168.232.100\
+  964  ssh root@192.168.232.100\
+  965  ls -l\
+  966  cd temp\
+  967  ls -l\
+  968  cd temp231\
+  969  ls -l\
+  970  rm *\
+  971  scp -r root@192.168.231.102:/hd/data/Output2*.csv .\
+  972  scp -r root@192.168.231.102:/hd/data/Output_a2.csv .\
+  973  pwd\
+  974  ssh root@192.168.233.101\
+  975  ping 192.168.233.101\
+  976  ssh root@192.168.233.101\
+  977  ssh root@192.168.234.100\
+  978  ping 192.168.234.100\
+  979  ssh root@192.168.234.100\
+  980  ssh root@192.168.232.100\
+  981  ssh root@192.168.231.102\
+  982  ssh root@192.168.233.101\
+  983  ls -l\
+  984  cd temp\
+  985  ls -l\
+  986  mkdir temp233\
+  987  ls -l\
+  988  cd temp233\
+  989  ls -l\
+  990  scp -r babup@192.168.233.101:/var/log/archived/su.1.log .\
+  991  scp -r root@192.168.233.101:/var/log/archived/su.1.log .\
+  992  scp -r root@192.168.233.101:/var/log/archived/dvr_client.log .\
+  993  scp -r root@192.168.233.101:/var/log/archived/dvr_client.1.log .\
+  994  scp -r root@192.168.233.101:/var/log/oncueapp/dvr_client.log .\
+  995  ls\
+  996  ls -l\
+  997  pwd\
+  998  ls -l\
+  999  cd temp\
+ 1000  ls -l\
+ 1001  cd temp233\
+ 1002  ls -l\
+ 1003  rm *\
+ 1004  ls -l\
+ 1005  scp -r root@192.168.233.101:/var/log/archived/* .\
+ 1006  scp -r root@192.168.233.101:/var/log/sys.log  .\
+ 1007  scp -r root@192.168.233.101:/var/log/oncueapp/dvr_client.log  .\
+ 1008  pwd\
+ 1009  ls -l\
+ 1010  pwd\
+ 1011  ssh root@192.168.233.101\
+ 1012  ssh root@192.168.231.102\
+ 1013  ssh root@192.168.232.100\
+ 1014  ssh root@192.168.231.102\
+ 1015  ssh root@192.168.232.100\
+ 1016  ssh root@192.168.233.101\
+ 1017  ssh root@192.168.234.100\
+ 1018  pwd\
+ 1019  ls -l\
+ 1020  cd temp\
+ 1021  ls -l\
+ 1022  cd temp231\
+ 1023  ls -l\
+ 1024  rm *\
+ 1025  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1026  scp -r root@192.168.231.102:/hd/data/Output_a2* .\
+ 1027  ls -l\
+ 1028  scp -r root@192.168.231.102:/hd/data/testlog/dvr_client.1.1.log .\
+ 1029  scp -r root@192.168.231.102:/hd/data/dvr_beta1-1.16.1533_4recordings_231.102.log .\
+ 1030  ls -l\
+ 1031  cd ..\
+ 1032  ls -l\
+ 1033  cd temp232\
+ 1034  ls -l\
+ 1035  rm *\
+ 1036  scp -r root@192.168.232.100:/hd/data/dvr_beta1-1.16.1533_4recordings_232.100.log .\
+ 1037  scp -r root@192.168.232.100:/hd/data/Output_a2* .\
+ 1038  scp -r root@192.168.232.100:/hd/data/Output2* .\
+ 1039  ls -l\
+ 1040  scp -r root@192.168.232.100:/hd/data/testlog/dvr_client.3.1.log .\
+ 1041  scp -r root@192.168.232.100:/hd/data/testlog/dvr_client.2.1.log .\
+ 1042  scp -r root@192.168.232.100:/hd/data/testlog/dvr_client.1.1.log .\
+ 1043  ls -l\
+ 1044  pwd\
+ 1045  cd ..\
+ 1046  cd temp231\
+ 1047  ls -l\
+ 1048  scp -r root@192.168.231.102:/var/log/archived/* .\
+ 1049  more sys.1.log.remove \
+ 1050  more dvr_client.1.1.log \
+ 1051  scp -r root@192.168.231.102:/var/log/oncueapp/* .\
+ 1052  ls -l\
+ 1053  ssh root@192.168.232.100\
+ 1054  ping 192.168.232.100\
+ 1055  ssh root@192.168.232.100\
+ 1056  ping 192.168.234.100\
+ 1057  ssh root@192.168.234.100\
+ 1058  ping 192.168.233.101\
+ 1059  ssh root@192.168.233.101\
+ 1060  ssh root@192.168.231.102\
+ 1061  ping 192.168.231.102\
+ 1062  ssh root@192.168.231.102\
+ 1063  pwd\
+ 1064  ls -l\
+ 1065  ssh root@192.168.231.102\
+ 1066  ssh root@192.168.232.100\
+ 1067  ping 192.168.232.100\
+ 1068  ssh root@192.168.231.102\
+ 1069  ping 192.168.233.101\
+ 1070  ssh root@192.168.233.101\
+ 1071  ssh root@192.168.231.101\
+ 1072  ping 192.168.231.101\
+ 1073  ping 192.168.231.103\
+ 1074  ping 192.168.232.101\
+ 1075  ping 192.168.233.100\
+ 1076  ping 192.168.233.101\
+ 1077  ping 192.168.233.100\
+ 1078  ping 192.168.233.104\
+ 1079  ping 192.168.233.105\
+ 1080  ping 192.168.233.100\
+ 1081  ping 192.168.234.102\
+ 1082  ssh root@192.168.234.102\
+ 1083  ssh root@192.168.231.104\
+ 1084  ping 192.168.231.104\
+ 1085  ssh root@192.168.231.104\
+ 1086  ping 192.168.234.100\
+ 1087  ssh root@192.168.234.100\
+ 1088  ping 192.168.234.100\
+ 1089  ssh root@192.168.234.100\
+ 1090  ping 192.168.234.100\
+ 1091  ssh root@192.168.234.100\
+ 1092  ssh root@192.168.233.102\
+ 1093  ping 192.168.233.102\
+ 1094  ssh root@192.168.233.102\
+ 1095  ssh root@192.168.234.102\
+ 1096  ping 192.168.234.102\
+ 1097  ssh root@192.168.234.102\
+ 1098  ping 192.168.231.102\
+ 1099  ssh root@192.168.231.102\
+ 1100  ping 192.168.231.102\
+ 1101  ssh root@192.168.231.102\
+ 1102  ping 192.168.231.102\
+ 1103  ssh root@192.168.231.102\
+ 1104  ssh root@192.168.231.104\
+ 1105  ping 192.168.231.104\
+ 1106  ssh root@192.168.231.104\
+ 1107  ping 192.168.232.102\
+ 1108  ssh root@192.168.232.102\
+ 1109  ssh root@192.168.233.102\
+ 1110  ping 192.168.233.102\
+ 1111  ssh root@192.168.233.102\
+ 1112  ping 192.168.234.102\
+ 1113  ssh root@192.168.234.102\
+ 1114  ping 192.168.234.102\
+ 1115  ssh root@192.168.234.102\
+ 1116  ping 192.168.232.100\
+ 1117  ssh root@192.168.232.100\
+ 1118  ping 192.168.232.100\
+ 1119  ssh root@192.168.232.100\
+ 1120  ping 192.168.232.100\
+ 1121  ssh root@192.168.232.100\
+ 1122  ssh root@192.168.233.101\
+ 1123  ping 192.168.233.101\
+ 1124  ssh root@192.168.233.101\
+ 1125  ping 192.168.231.102\
+ 1126  ssh root@192.168.231.102\
+ 1127  ssh root@192.168.233.101\
+ 1128  ssh root@192.168.232.100\
+ 1129  ping 192.168.232.100\
+ 1130  ssh root@192.168.232.100\
+ 1131  ssh root@192.168.234.100\
+ 1132  ping 192.168.234.100\
+ 1133  ssh root@192.168.234.100\
+ 1134  ping 192.168.233.101\
+ 1135  ssh root@192.168.233.101\
+ 1136  ssh root@192.168.231.102\
+ 1137  ping 192.168.231.102\
+ 1138  ssh root@192.168.231.102\
+ 1139  ssh root@192.168.233.101\
+ 1140  ping 192.168.233.101\
+ 1141  ssh root@192.168.233.101\
+ 1142  ssh root@192.168.232.100\
+ 1143  ping 192.168.232.100\
+ 1144  ssh root@192.168.232.100\
+ 1145  ssh root@192.168.234.100\
+ 1146  ssh root@192.168.232.100\
+ 1147  ping 192.168.232.100\
+ 1148  ssh root@192.168.234.100\
+ 1149  ssh root@192.168.232.100\
+ 1150  ping 192.168.232.100\
+ 1151  ssh root@192.168.232.100\
+ 1152  ssh root@192.168.231.102\
+ 1153  ping 192.168.231.102\
+ 1154  ssh root@192.168.231.102\
+ 1155  ping 192.168.231.102\
+ 1156  ssh root@192.168.231.102\
+ 1157  ping 192.168.231.102\
+ 1158  ssh root@192.168.231.102\
+ 1159  ssh root@192.168.233.101\
+ 1160  ping 192.168.233.101\
+ 1161  ssh root@192.168.233.101\
+ 1162  ping 192.168.231.102\
+ 1163  ssh root@192.168.231.102\
+ 1164  ls -l\
+ 1165  cd temp\
+ 1166  ls -l\
+ 1167  cd temp231\
+ 1168  ls -l\
+ 1169  rm *\
+ 1170  ls -l\
+ 1171  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1172  scp -r root@192.168.231.102:/hd/data/Output2*.csv . .\
+ 1173  scp -r root@192.168.231.102:/hd/data/Output2*.csv .\
+ 1174  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1175  pwd\
+ 1176  ping 192.168.231.102\
+ 1177  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1178  scp -r root@192.168.231.102:/hd/data/Output2*.* .\
+ 1179  scp -r root@192.168.231.102:/hd/data/* .\
+ 1180  ls -l\
+ 1181  pwd\
+ 1182  rm *\
+ 1183  rm -rf *\
+ 1184  ls -l\
+ 1185  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1186  scp -r root@192.168.231.102:/hd/data/Output_a2* .\
+ 1187  pwd\
+ 1188  ssh root@192.168.232.100\
+ 1189  ping 192.168.232.100\
+ 1190  ping 192.168.234.100\
+ 1191  ssh root@192.168.234.100\
+ 1192  ping 192.168.233.101\
+ 1193  ssh root@192.168.233.101\
+ 1194  ping 192.168.231.102\
+ 1195  ssh root@192.168.231.102\
+ 1196  ping 192.168.233.101\
+ 1197  ssh root@192.168.233.101\
+ 1198  ssh root@192.168.233.101\
+ 1199  ssh root@192.168.232.100\
+ 1200  ping 192.168.232.100\
+ 1201  ping 192.168.233.101\
+ 1202  ssh root@192.168.233.101\
+ 1203  ssh root@192.168.232.100\
+ 1204  ping 192.168.232.100\
+ 1205  ssh root@192.168.232.100\
+ 1206  ping 192.168.232.100\
+ 1207  ssh root@192.168.232.100\
+ 1208  ping 192.168.231.102\
+ 1209  ssh root@192.168.231.102\
+ 1210  ping 192.168.231.102\
+ 1211  ssh root@192.168.231.102\
+ 1212  ping 192.168.231.102\
+ 1213  ssh root@192.168.231.102\
+ 1214  ssh root@192.168.232.100\
+ 1215  ifconfig -a\
+ 1216  ssh root@192.168.231.102\
+ 1217  ping 192.168.231.102\
+ 1218  ssh root@192.168.231.102\
+ 1219  ping 192.168.232.100\
+ 1220  ssh root@192.168.232.100\
+ 1221  ping 192.168.233.101\
+ 1222  ssh root@192.168.233.101\
+ 1223  ping 192.168.234.100\
+ 1224  ssh root@192.168.234.100\
+ 1225  ssh root@192.168.231.102\
+ 1226  ping 192.168.231.102\
+ 1227  ssh root@192.168.231.102\
+ 1228  ping 192.168.232.100\
+ 1229  ssh root@192.168.232.100\
+ 1230  ssh root@192.168.233.101\
+ 1231  ping 192.168.233.101\
+ 1232  ssh root@192.168.233.101\
+ 1233  ping 192.168.234.100\
+ 1234  ssh root@192.168.234.100\
+ 1235  ls -l\
+ 1236  cd utility/\
+ 1237  ls -l\
+ 1238  scp -r * root@192.168.231.102:/hd/data\
+ 1239  scp -r * root@192.168.232.100:/hd/data\
+ 1240  scp -r * root@192.168.233.101:/hd/data\
+ 1241  scp -r * root@192.168.234.100:/hd/data\
+ 1242  ping 192.168.231.102\
+ 1243  ssh root@192.168.231.102\
+ 1244  ssh root@192.168.232.100\
+ 1245  ping 192.168.232.100\
+ 1246  ssh root@192.168.232.100\
+ 1247  ping 192.168.233.101\
+ 1248  ssh root@192.168.232.101\
+ 1249  ssh root@192.168.233.101\
+ 1250  ssh root@192.168.234.100\
+ 1251  ping 192.168.232.100\
+ 1252  ssh root@192.168.232.100\
+ 1253  ping 192.168.232.100\
+ 1254  ssh root@192.168.232.100\
+ 1255  ping 192.168.232.100\
+ 1256  ssh root@192.168.232.100\
+ 1257  ping 192.168.234.100\
+ 1258  ssh root@192.168.234.100\
+ 1259  ping 192.168.234.100\
+ 1260  ssh root@192.168.234.100\
+ 1261  ping 192.168.231.102\
+ 1262  ssh root@192.168.231.102\
+ 1263  ping 192.168.231.102\
+ 1264  ssh root@192.168.231.102\
+ 1265  ping 192.168.231.102\
+ 1266  ssh root@192.168.231.102\
+ 1267  ping 192.168.233.101\
+ 1268  ssh root@192.168.233.101\
+ 1269  ping 192.168.233.101\
+ 1270  ssh root@192.168.233.101\
+ 1271  ping 192.168.233.101\
+ 1272  ssh root@192.168.233.101\
+ 1273  ping 192.168.233.101\
+ 1274  ssh root@192.168.233.101\
+ 1275  ssh root@192.168.231.102\
+ 1276  pwd\
+ 1277  ls -l\
+ 1278  cd temp\
+ 1279  ls -l\
+ 1280  cd temp231\
+ 1281  ls -l\
+ 1282  rm *\
+ 1283  scp -r root@192.168.231.102:/hd/data/Output2* .\
+ 1284  scp -r root@192.168.231.102:/hd/data/Output_a2* .\
+ 1285  pwd\
+ 1286  ping  192.168.231.102\
+ 1287  ssh root@ 192.168.231.102\
+ 1288  ssh root@192.168.231.102\
+ 1289  ping  192.168.231.102\
+ 1290  ssh root@192.168.231.102\
+ 1291  ping  192.168.232.100\
+ 1292  ssh root@192.168.232.100\
+ 1293  ssh root@192.168.231.102\
+ 1294  ping  192.168.231.102\
+ 1295  ssh root@192.168.231.102\
+ 1296  ssh root@192.168.233.101\
+ 1297  ping  192.168.233.101\
+ 1298  ssh root@192.168.233.101\
+ 1299  ping  192.168.234.100\
+ 1300  ssh root@192.168.234.100\
+ 1301  ssh root@192.168.232.100\
+ 1302  ping  192.168.231.102\
+ 1303  ssh root@192.168.231.102\
+ 1304  ssh root@192.168.231.102\
+ 1305  ping  192.168.232.100\
+ 1306  ssh root@192.168.232.100\
+ 1307  ping  192.168.234.100\
+ 1308  ssh root@192.168.234.100\
+ 1309  ping  192.168.234.100\
+ 1310  ssh root@192.168.234.100\
+ 1311  ping  192.168.234.100\
+ 1312  ssh root@192.168.234.100\
+ 1313  ping  192.168.232.102\
+ 1314  ssh root@192.168.232.102\
+ 1315  ssh root@192.168.231.102\
+ 1316  ping  192.168.232.100\
+ 1317  ssh root@192.168.232.100\
+ 1318  ping  192.168.233.101\
+ 1319  ssh root@192.168.233.101\
+ 1320  ping  192.168.233.101\
+ 1321  ssh root@192.168.233.101\
+ 1322  ping  192.168.232.100\
+ 1323  ssh root@192.168.232.100\
+ 1324  ping  192.168.233.101\
+ 1325  ssh root@192.168.232.100\
+ 1326  ssh root@192.168.233.101\
+ 1327  ping  192.168.232.100\
+ 1328  ssh root@192.168.232.100\
+ 1329  ssh root@192.168.231.102\
+ 1330  ping  192.168.231.102\
+ 1331  ssh root@192.168.231.102\
+ 1332  ping  192.168.234.100\
+ 1333  ssh root@192.168.234.100\
+ 1334  ping  192.168.232.100\
+ 1335  ssh root@192.168.232.100\
+ 1336  ls -l\
+ 1337  cd temp\
+ 1338  ls -l\
+ 1339  mkdir temp_232_100\
+ 1340  cd temp_232_100\
+ 1341  cd ..\
+ 1342  ls -l\
+ 1343  cd temp232\
+ 1344  ls -l\
+ 1345  rm *\
+ 1346  scp -r root@192.168.232.100:/hd/dta/testlog/dvr_client.4.1.log .\
+ 1347  scp -r root@192.168.232.100:/config/dvrRecordings.json .\
+ 1348  pwd\
+ 1349  ls -l\
+ 1350  pwd\
+ 1351  cd ..\
+ 1352  pwd\
+ 1353  ls -l\
+ 1354  cd temp232\
+ 1355  ls -l\
+ 1356  scp -r root@192.168.232.100:/hd/data/testlog/dvr_client.4.1.log  .\
+ 1357  ls -l\
+ 1358  pwd\
+ 1359  ls -l\
+ 1360  scp -r root@192.168.232.100:/hd/data/testlog/*  .\
+ 1361  ls -l\
+ 1362  pwd\
+ 1363  ls -l\
+ 1364  ping 192.168.231.102\
+ 1365  ssh root@ 192.168.231.102\
+ 1366  ssh root@192.168.231.102\
+ 1367  ping 192.168.232.100\
+ 1368  ssh root@192.168.232.100\
+ 1369  ping 192.168.233.101\
+ 1370  ssh root@192.168.233.101\
+ 1371  ping 192.168.234.100\
+ 1372  ssh root@192.168.234.100\
+ 1373  ping 192.168.231.102\
+ 1374  ssh root@192.168.231.102\
+ 1375  ssh root@192.168.232.100\
+ 1376  ping 192.168.232.100\
+ 1377  ssh root@192.168.232.100\
+ 1378  ping 192.168.233.101\
+ 1379  ssh root@192.168.233.101\
+ 1380  ping 192.168.234.100\
+ 1381  ssh root@192.168.234.100\
+ 1382  ping 192.168.234.100\
+ 1383  ssh root@192.168.234.100\
+ 1384  ssh root@192.168.232.100\
+ 1385  ping 192.168.231.102\
+ 1386  ssh root@192.168.231.102\
+ 1387  ping 192.168.231.102\
+ 1388  ssh root@192.168.231.102\
+ 1389  ping 192.168.231.102\
+ 1390  ssh root@192.168.231.102\
+ 1391  ssh root@192.168.231.102\
+ 1392  ping 192.168.231.102\
+ 1393  ssh root@192.168.231.102\
+ 1394  ping 192.168.231.102\
+ 1395  ssh root@192.168.231.102\
+ 1396  ping 192.168.233.101\
+ 1397  ssh root@192.168.233.101\
+ 1398  ping 192.168.233.101\
+ 1399  ssh root@192.168.233.101\
+ 1400  ping 192.168.232.100\
+ 1401  ssh root@192.168.232.100\
+ 1402  ping 192.168.232.100\
+ 1403  ssh root@192.168.232.100\
+ 1404  ping 192.168.232.100\
+ 1405  ssh root@192.168.232.100\
+ 1406  ping 192.168.232.100\
+ 1407  ssh root@192.168.232.100\
+ 1408  ping 192.168.233.101\
+ 1409  ping 192.168.234.100\
+ 1410  ssh root@192.168.234.100\
+ 1411  ping 192.168.234.100\
+ 1412  ssh root@192.168.234.100\
+ 1413  ping 192.168.234.100\
+ 1414  ssh root@192.168.234.100\
+ 1415  ping 192.168.231.102\
+ 1416  ssh root@192.168.231.102\
+ 1417  ping 192.168.233.101\
+ 1418  ssh root@192.168.233.101\
+ 1419  ping 192.168.234.100\
+ 1420  ssh root@192.168.234.100\
+ 1421  ping 192.168.232.100\
+ 1422  ssh root@192.168.232.100\
+ 1423  ping 192.168.231.102\
+ 1424  ssh root@192.168.231.102\
+ 1425  ping 192.168.232.100\
+ 1426  ssh root@192.168.232.100\
+ 1427  ping 192.168.232.100\
+ 1428  ssh root@192.168.232.100\
+ 1429  ping 192.168.232.100\
+ 1430  ssh root@192.168.232.100\
+ 1431  ping 192.168.232.100\
+ 1432  ssh root@192.168.232.100\
+ 1433  ping 192.168.231.102\
+ 1434  ssh root@192.168.231.102\
+ 1435  ping 192.168.231.102\
+ 1436  ssh root@192.168.231.102\
+ 1437  ping 192.168.233.101\
+ 1438  ssh root@192.168.233.101\
+ 1439  ssh root@192.168.234.100\
+ 1440  ping 192.168.234.100\
+ 1441  ssh root@192.168.234.100\
+ 1442  ping 192.168.234.100\
+ 1443  ssh root@192.168.234.100\
+ 1444  ping 192.168.234.100\
+ 1445  ssh root@192.168.234.100\
+ 1446  sar -u 2\
+ 1447  ping 192.168.234.100\
+ 1448  sar -u 2\
+ 1449  ping 192.168.234.100\
+ 1450  ssh root@192.168.234.100\
+ 1451  ping 192.168.232.100\
+ 1452  ssh root@192.168.232.100\
+ 1453  ping 192.168.231.102\
+ 1454  ssh root@192.168.231.102\
+ 1455  ssh root@192.168.232.100\
+ 1456  ping 192.168.232.100\
+ 1457  ssh root@192.168.232.100\
+ 1458  ping 192.168.232.100\
+ 1459  ssh root@192.168.232.100\
+ 1460  ping 192.168.233.101\
+ 1461  ssh root@192.168.233.101\
+ 1462  pwd\
+ 1463  ls -l\
+ 1464  cd utility/\
+ 1465  ls -l\
+ 1466  scp -r * root@192.168.232.100:/hd/data\
+ 1467  scp -r * root@192.168.233.101:/hd/data\
+ 1468  scp -r * root@192.168.234.100:/hd/data\
+ 1469  ssh root@192.168.231.102\
+ 1470  ping 192.168.233.101\
+ 1471  ssh root@192.168.233.101\
+ 1472  ping 192.168.233.101\
+ 1473  ssh root@192.168.233.101\
+ 1474  ping 192.168.233.101\
+ 1475  ssh root@192.168.233.101\
+ 1476  ping 192.168.233.101\
+ 1477  ssh root@192.168.233.101\
+ 1478  ssh root@192.168.234.100\
+ 1479  ping 192.168.234.100\
+ 1480  ssh root@192.168.234.100\
+ 1481  ping 192.168.234.100\
+ 1482  ssh root@192.168.234.100\
+ 1483  ping 192.168.232.100\
+ 1484  ssh root@192.168.232.100\
+ 1485  ls -l\
+ 1486  cd temp\
+ 1487  ls -l\
+ 1488  cd temp232\
+ 1489  ls -l\
+ 1490  rm *\
+ 1491  pwd\
+ 1492  scp -r root@192.168.232.100:/hd/data/testlog/* .\
+ 1493  ls -l\
+ 1494  cp dvr_client.3.1.log dvr_client_3.1_232_100.log\
+ 1495  cp dvr_client.4.1.log dvr_client_4.1_232_100.log\
+ 1496  ls -l\
+ 1497  pwd\
+ 1498  ls -larth\
+ 1499  pwd\
+ 1500  ssh root@192.168.232.100\
+ 1501  ssh root@192.168.233.101\
+ 1502  ssh root@192.168.234.100\
+ 1503  ping 192.168.231.102\
+ 1504  ssh root@192.168.231.102\
+ 1505  ping 192.168.234.100\
+ 1506  ssh root@192.168.234.100\
+ 1507  ping 192.168.233.101\
+ 1508  ssh root@192.168.233.101\
+ 1509  ping 192.168.231.102\
+ 1510  ssh root@192.168.231.102\
+ 1511  ping 192.168.232.100\
+ 1512  ssh root@192.168.232.100\
+ 1513  ping 192.168.232.100\
+ 1514  ssh root@192.168.232.100\
+ 1515  ping 192.168.233.101\
+ 1516  ssh root@192.168.233.101\
+ 1517  ping 192.168.233.101\
+ 1518  ssh root@192.168.233.101\
+ 1519  ssh root@192.168.234.100\
+ 1520  ping 192.168.232.100\
+ 1521  ping 192.168.234.100\
+ 1522  ssh root@192.168.234.100\
+ 1523  ping 192.168.231.102\
+ 1524  ssh root@192.168.231.102\
+ 1525  ping 192.168.231.102\
+ 1526  ssh root@192.168.231.102\
+ 1527  ssh root@192.168.232.100\
+ 1528  ping 192.168.232.100\
+ 1529  ssh root@192.168.232.100\
+ 1530  ping 192.168.231.102\
+ 1531  ping 192.168.233.101\
+ 1532  ssh root@192.168.233.101\
+ 1533  ping 192.168.233.101\
+ 1534  ssh root@192.168.233.101\
+ 1535  ssh root@192.168.234.100\
+ 1536  ping 192.168.234.100\
+ 1537  ssh root@192.168.234.100\
+ 1538  ssh root@192.168.233.101\
+ 1539  ssh root@192.168.232.100\
+ 1540  ssh root@192.168.234.100\
+ 1541  ssh root@192.168.232.100\
+ 1542  exit\
+ 1543  ssh root@192.168.233.101\
+ 1544  ping 192.168.233.101\
+ 1545  ssh root@192.168.233.101\
+ 1546  ping 192.168.233.101\
+ 1547  ssh root@192.168.233.101\
+ 1548  ping 192.168.233.101\
+ 1549  ssh root@192.168.233.101\
+ 1550  ping 192.168.232.100\
+ 1551  ssh root@192.168.232.100\
+ 1552  cd /etc/ssh\
+ 1553  ls -l\
+ 1554  cat ssh_host_dsa_key.pub \
+ 1555  grep 715c167036ca8415c6a043269faf7ae1\
+ 1556  ls -l\
+ 1557  grep 715c167036ca8415c6a043269faf7ae1 .\
+ 1558  pwd\
+ 1559  grep pwd\
+ 1560  grep 715c167036ca8415c6a043269faf7ae1 /etc/ssh\
+ 1561  grep 715c167036ca8415c6a043269faf7ae1 /etc/ssh/*\
+ 1562  grep 715c167036ca8415c6a043269faf7ae1 /etc/ssh/\
+ 1563  ssh root@192.168.234.100\
+ 1564  ping 192.168.234.100\
+ 1565  ssh root@192.168.234.100\
+ 1566  ping 192.168.231.102\
+ 1567  ssh root@192.168.231.102\
+ 1568  ping 192.168.231.102\
+ 1569  ssh root@192.168.231.102\
+ 1570  ping 192.168.231.102\
+ 1571  ssh root@192.168.231.102\
+ 1572  ping 192.168.231.102\
+ 1573  ssh root@192.168.231.102\
+ 1574  ping 192.168.231.102\
+ 1575  ssh root@192.168.231.102\
+ 1576  ping 192.168.232.100\
+ 1577  ssh root@192.168.232.100\
+ 1578  ping 192.168.232.100\
+ 1579  ssh root@192.168.232.100\
+ 1580  ping 192.168.232.100\
+ 1581  ssh root@192.168.232.100\
+ 1582  ping 192.168.232.100\
+ 1583  ssh root@192.168.232.100\
+ 1584  rm -rf ~/.ssh/known_hosts \
+ 1585  ssh root@192.168.232.100\
+ 1586  ping 192.168.232.100\
+ 1587  ssh root@192.168.232.100\
+ 1588  ping 192.168.232.100\
+ 1589  ssh root@192.168.232.100\
+ 1590  ping 192.168.232.100\
+ 1591  ssh root@192.168.232.100\
+ 1592  ping 192.168.232.100\
+ 1593  ssh root@192.168.232.100\
+ 1594  ping 192.168.231.102\
+ 1595  ssh root@192.168.231.102\
+ 1596  ping 192.168.231.102\
+ 1597  ssh root@192.168.231.102\
+ 1598  ping 192.168.231.102\
+ 1599  ssh root@192.168.231.102\
+ 1600  ping 192.168.231.102\
+ 1601  ssh root@192.168.231.102\
+ 1602  ping 192.168.231.102\
+ 1603  ssh root@192.168.231.102\
+ 1604  ping 192.168.231.102\
+ 1605  ssh root@192.168.231.102\
+ 1606  ping 192.168.233.101\
+ 1607  ssh root@192.168.233.101\
+ 1608  ping 192.168.233.101\
+ 1609  ssh root@192.168.233.101\
+ 1610  ping 192.168.233.101\
+ 1611  ssh root@192.168.233.101\
+ 1612  ping 192.168.233.101\
+ 1613  ssh root@192.168.233.101\
+ 1614  ping 192.168.233.101\
+ 1615  ssh root@192.168.233.101\
+ 1616  ping 192.168.233.101\
+ 1617  ssh root@192.168.233.101\
+ 1618  ping 192.168.234.100\
+ 1619  ssh root@192.168.234.100\
+ 1620  ping 192.168.234.100\
+ 1621  ssh root@192.168.234.100\
+ 1622  ping 192.168.234.100\
+ 1623  ssh root@192.168.234.100\
+ 1624  pwd\
+ 1625  ssh root@192.168.234.100\
+ 1626  ping 192.168.234.100\
+ 1627  ssh root@192.168.234.100\
+ 1628  ping 192.168.234.100\
+ 1629  ssh root@192.168.234.100\
+ 1630  ping 192.168.234.100\
+ 1631  ssh root@192.168.234.100\
+ 1632  ls -l\
+ 1633  cd temp\
+ 1634  ls -l\
+ 1635  cd temp232\
+ 1636  ls -l\
+ 1637  scp -r root@192.168.232.100:/etc/dvrLog.conf .\
+ 1638  scp -r dvrLog.conf root@192.168.231.102:/etc/\
+ 1639  scp -r dvrLog.conf root@192.168.231.102:/etc/back\
+ 1640  scp -r dvrLog.conf root@192.168.231.102:/etc/\
+ 1641  pwd\
+ 1642  ls -l\
+ 1643  rm *\
+ 1644  ls -l\
+ 1645  scp -r dvrLog.conf root@192.168.232.100:/hd/data/Output2* .\
+ 1646  scp -r root@192.168.232.100:/hd/data/Output2* .\
+ 1647  scp -r root@192.168.232.100:/hd/data/Output_a2* .\
+ 1648  pwd\
+ 1649  ls -l\
+ 1650  pwd\
+ 1651  ssh root@192.168.234.100\
+ 1652  ping 192.168.233.101\
+ 1653  ssh root@192.168.233.101\
+ 1654  ping 192.168.233.101\
+ 1655  ssh root@192.168.233.101\
+ 1656  ssh root@192.168.232.100\
+ 1657  ping 192.168.232.100\
+ 1658  ssh root@192.168.232.100\
+ 1659  ping 192.168.232.100\
+ 1660  ssh root@192.168.232.100\
+ 1661  ping 192.168.232.100\
+ 1662  ssh root@192.168.232.100\
+ 1663  ping 192.168.231.102\
+ 1664  ssh root@192.168.231.102\
+ 1665  ping 192.168.231.102\
+ 1666  ssh root@192.168.231.102\
+ 1667  ping 192.168.231.102\
+ 1668  ssh root@192.168.231.102\
+ 1669  ping 192.168.231.102\
+ 1670  ssh root@192.168.231.102\
+ 1671  ping 192.168.231.102\
+ 1672  pwd\
+ 1673  ls -l\
+ 1674  cd temp\
+ 1675  ls -l\
+ 1676  cd temp231\
+ 1677  cd ..\
+ 1678  ls -l\
+ 1679  cd temp232\
+ 1680  ls -l\
+ 1681  rm *\
+ 1682  scp -r root@192.168.232.100:/var/log/oncueapp/dvr_client.log .\
+ 1683  pwd\
+ 1684  ls -l\
+ 1685  exit\
+ 1686  ls -l\
+ 1687  mkdir henry\
+ 1688  mv DVR_python.tgz ./henry/\
+ 1689  cd henry/\
+ 1690  pwd\
+ 1691  tar zxvf DVR_python.tgz \
+ 1692  ll\
+ 1693  cd DVR_python/\
+ 1694  pwd\
+ 1695  ls -l\
+ 1696  cp Dvr_SOAK_test_start.py Dvr_SOAK_test_start_1.py\
+ 1697  vi Dvr_SOAK_test_start_1.py \
+ 1698  python Dvr_SOAK_test_start_1.py \
+ 1699  pip install paramiko\
+ 1700  sudo apt-get install python-pip\
+ 1701  python\
+ 1702  pip install paramiko\
+ 1703  sudo pip install paramiko\
+ 1704  gcc\
+ 1705  vi /home/babup/.pip/pip.log\
+ 1706  sudo pip install paramiko | tee /tmp/ttt\
+ 1707  vi /tmp/ttt\
+ 1708  sudo pip install --upgrade paramiko | tee /tmp/ttt\
+ 1709  :q\
+ 1710  apt-cache search libffi\
+ 1711  sudo apt-get install libffi-dev libffi6 libffi6-dbg lib64ffi-dev\
+ 1712  sudo pip install paramiko | tee /tmp/ttt\
+ 1713  vi /tmp/ttt\
+ 1714  sudo apt-get install python-dev\
+ 1715  sudo pip install paramiko | tee /tmp/ttt\
+ 1716  history |grep Dvr\
+ 1717  python Dvr_SOAK_test_start_1.py \
+ 1718  history |grep Dvr\
+ 1719  history\
+babup@master-vm4:~/henry/DVR_python$ \
+}
