@@ -5,6 +5,7 @@ import os
 import time
 import re
 
+import hh
 import re
 word = 'fubar'
 regexp = re.compile(r'ba[rzd]')
